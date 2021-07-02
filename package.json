@@ -4,7 +4,8 @@
   "description": "a portfolio app",
   "private": true,
   "scripts": {
-    "start": "craco start",
+    "start": "node server.js",
+    "react": "craco start",
     "build": "craco build",
     "test": "craco test",
     "heroku-postbuild": "npm install && npm run build"
