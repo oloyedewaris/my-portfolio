@@ -1,5 +1,5 @@
 import React from "react";
-import warisCv from "../Utils/Waris-CV.docx";
+import resume from "../Utils/Waris Oloyede.pdf";
 
 const Resume = (props) => {
   const work = [
@@ -72,7 +72,7 @@ const Resume = (props) => {
       </div>
       <div className="mx-2 sm:mx-4 md:mx-12 w-full sm:w-5/6 text-center block py-4 sm:py-8 sm:flex sm:justify-center">
         <div className="sm:w-1/4 sm:text-left">
-          <h1 className="font-sans border-b-1 border-blue-700 text-center text-2xl">
+          <h1 className="font-sans border-b-1 border-blue-700 text-center text-2xl font-medium">
             Skills
           </h1>
         </div>
@@ -90,9 +90,9 @@ const Resume = (props) => {
         </div>
       </div>
       <div className="py-auto mx-36 inline-block text-left my-4">
-        <a href={warisCv} download="Waris-CV.docx">
+        <a href={resume} download="Waris-resume.docx">
           <button className="rounded px-4 py-2 bg-blue-700 hover:bg-blue-600">
-            Download CV
+            Download resume
           </button>
         </a>
       </div>
