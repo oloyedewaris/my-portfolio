@@ -5,17 +5,19 @@ import Resume from "./components/Resume";
 import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Slider from "./components/Navbar/Slider"
 
 const App = () => {
   return (
-    <>
+    <div className="w-full">
       <Header />
+      <Slider />
       <About />
       <Resume />
       <Portfolio />
       <Contact />
       <Footer />
-    </>
+    </div>
   );
 };
 

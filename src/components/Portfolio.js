@@ -18,7 +18,7 @@ const Portfolio = () => {
       viewUrl: "https://waris-social-app.herokuapp.com",
     },
     {
-      name: "Calculatify",
+      name: "Online Calculator",
       description: "Web calculator",
       tools: "React, css3",
       imgurl: Calculatify,
@@ -63,13 +63,13 @@ const Portfolio = () => {
   ];
 
   return (
-    <section id="portfolio" className="bg-blue-200 mx-auto py-4">
+    <section id="portfolio" className="bg-blue-100 right-0 mx-auto py-4">
       <div className="text-center">
         <div className="container py-2 m-auto">
           <h1 className="text-3xl mb-4 sm:mb-8 text-center font-medium">
             Check Out Some of My Works.
           </h1>
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2 mx-4 sm:mx-8 lg:mx-32 px-2 text-center place-items-center">
+          <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2 mx-2 xs:mx-4 sm:mx-8 lg:mx-32 px-2 text-center place-items-center">
             {portfolio.map((item, i) => (
               <div key={i} className="my-2 px-2 shadow-lg">
                 <h5 className="mb-4 font-medium">{item.name}</h5>
@@ -84,7 +84,7 @@ const Portfolio = () => {
                     <p>{item.description}</p>
                   </div>
                 </div>
-                <p className="text-center align-center content-center h-14 sm:h-20 md:h-18 lg:h-16">
+                <p className="text-center align-center content-center h-22 xs:h-16 sm:h-20 md:h-18 lg:h-16">
                   {item.tools}
                 </p>
                 <div className="">

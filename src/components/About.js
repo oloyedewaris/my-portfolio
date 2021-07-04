@@ -1,13 +1,14 @@
 import React from "react";
+import ProfileImg from "../Utils/images/profilepic.jpg";
 
 const About = () => {
   return (
-    <section id="about" className="bg-gray-100 py-4 px-2">
+    <section id="about" className="bg-gray-100 right-0 py-4 px-2">
       <div className="block mx-4 md:m-2 lg:m-4 block md:flex">
         <div className="container w-full md:w-1/5 flex justify-center align-middle mx-auto py-auto">
           <img
             className="rounded-full w-40 h-40 md:w-28 md:h-28 flex items-center justify-center mx-4 md:mx-2"
-            src="images/profilepic.jpg"
+            src={ProfileImg}
             alt="waris oloyede"
           />
         </div>
@@ -23,12 +24,12 @@ const About = () => {
           <div>
             <div>
               <h2 className="text-2xl my-2 font-bold">Contact Details</h2>
-              <p className="my-2">
+              <div className="my-2">
                 <p className="font-medium my-2">Waris Oloyede</p>
                 <p>Isawo road, Ikorodu, Lagos, Nigeria</p>
                 <p>+2348108745769</p>
                 <p>oloyedewaris@gmail.com</p>
-              </p>
+              </div>
             </div>
           </div>
         </div>

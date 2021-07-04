@@ -9,7 +9,7 @@ import {
 } from "@ant-design/icons";
 import Typist from "react-typist";
 
-const Header = (props) => {
+const Header = () => {
   const socialLinks = [
     {
       name: "instagram",
@@ -45,40 +45,40 @@ const Header = (props) => {
 
   return (
     <React.Fragment>
-      <header id="waris" className="w-full header-background">
-        <div className="h-20"></div>
-        <div className="fixed left-0 z-10 nav bg-blue-900 top-0 right-0 flex justify-center">
-          <nav className="h-18 m-auto flex py-3 mx-4 w-2/4 justify-center md:w-3/4">
+      <header id="waris" className="header-background flex justify-center flex-col">
+        <div className="h-20" />
+        <div className="z-10 nav bg-blue-900 fixed left-0 top-0 right-0 flex justify-center">
+          <nav className="h-18 flex py-3 mx-4 w-2/4 justify-center md:w-3/4">
             <a
               href="#"
-              className=" mx-8 text-center px-4 font-medium text-3xl w-1/5 mx-auto"
+              className=" mx-8 text-center px-4 font-bold text-3xl w-1/5 mx-auto"
             >
               Waris
             </a>
-            <div className=" w-3/4 m-auto mx-12 px-4 flex text-center">
-              <div className="mx-auto font-medium py-2 hover:bg-blue-600 px-4 py-2 rounded">
-                <a href="#about">About</a>
-              </div>
-              <div className="mx-auto font-medium py-2 hover:bg-blue-600 px-4 py-2 rounded">
-                <a href="#resume">Resume</a>
-              </div>
-              <div className="mx-auto font-medium py-2 hover:bg-blue-600 px-4 py-2 rounded">
-                <a href="#portfolio">Portfolio</a>
-              </div>
-              <div className="mx-auto  font-medium py-2 hover:bg-blue-600 px-4 py-2 rounded">
-                <a href="#contact">Contact</a>
-              </div>
+            <div className="media-nav w-3/4 m-auto mx-12 px-4 flex text-center">
+            <a href="#about"  className="mx-auto font-bold py-2 hover:bg-blue-600 px-4 py-2 rounded">
+                            About
+                            </a>
+              <a href="#resume" className="mx-auto font-bold py-2 hover:bg-blue-600 px-4 py-2 rounded">
+            
+                Resume
+                            </a>
+              <a href="#portfolio" className="mx-auto font-bold py-2 hover:bg-blue-600 px-4 py-2 rounded">
+                            Portfolio
+                            </a>
+              <a href="#contact" className="mx-auto font-bold py-2 hover:bg-blue-600 px-4 py-2 rounded">
+                            Contact
+                            </a>
             </div>
           </nav>
         </div>
-        <div className="block text-center py-8 mx-auto w-5/6 lg:w-3/5 md:4/6">
-          <div>
+        <div className="inline-block text-center  py-8 mx-2 xs:mx-auto w-full xs:w-5/6 lg:w-3/5 md:4/6">
             <h1 className="align-top head text-6xl mx-auto my-2 font-mono">
               Waris Oloyede
             </h1>
-            <h3 className="align-middle font-sans mx-auto px-auto text-center colors-coolGrey-200">
+            <h3 className="align-middle font-sans mx-auto px-auto text-center text-coolGrey-200">
               <Typist cursor={{ show: false }} startDelay={2500}>
-                <p className="border-b-1 border-blue-700 text-2xl my-4">
+                <p className=" min-h-54border-b-1 border-blue-700 text-2xl my-4">
                   I am a Full Stack Mern Developer. I enjoy building
                   applications ranging from simple front-end apps to full-stack
                   apps with the help of some latest technologies in my free
@@ -87,12 +87,9 @@ const Header = (props) => {
               </Typist>
             </h3>
             <hr />
-            <ul className="flex justify-center">
+            <div className="flex justify-center">
               {socialLinks.map((link) => (
-                <div
-                  className="text-center w1/5 mx-1 my-4 px-2 py-2"
-                  key={link.name}
-                >
+                <p className="text-center mx-1 xs:mx-2 my-4 py-2 sm:mx-4" key={link.name}>
                   <a
                     className="text-4xl hover:text-blue-800"
                     href={link.url}
@@ -101,14 +98,16 @@ const Header = (props) => {
                   >
                     {link.icon}
                   </a>
-                </div>
+                </p>
               ))}
-            </ul>
-          </div>
+            </div>
         </div>
       </header>
+      
     </React.Fragment>
   );
 };
 
 export default Header;
+
+// 03053875757059711 
