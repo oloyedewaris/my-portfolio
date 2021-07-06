@@ -1,9 +1,9 @@
 .side-drawer {
-  height: 30vh;
+  height: 40%;
   position: fixed;
   bottom: 0;
   right: 0;
-  width: 30vw;
+  width: 50%;
   z-index: 200;
   box-shadow: 1px #f3f1f1;
   transform: translateY(100%);

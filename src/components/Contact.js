@@ -13,7 +13,7 @@ const ContactUs = (props) => {
   };
 
   return (
-    <section id="contact" className="right-0 bg-blue-600">
+    <section id="contact" className="bg-blue-600">
       <div className="px-4 md:px-18 sm:px-12 lg:px-36 align-center inline-block">
         <div className="py-4 sm:py-2 m-auto">
           <div className="py-2 flex w-full justify-center">

@@ -3,7 +3,7 @@ import ProfileImg from "../Utils/images/profilepic.jpg";
 
 const About = () => {
   return (
-    <section id="about" className="bg-gray-100 right-0 py-4 px-2">
+    <section id="about" className="bg-gray-100 py-4 px-2">
       <div className="block mx-4 md:m-2 lg:m-4 block md:flex">
         <div className="container w-full md:w-1/5 flex justify-center align-middle mx-auto py-auto">
           <img

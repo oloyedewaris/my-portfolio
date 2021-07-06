@@ -63,7 +63,7 @@ const Portfolio = () => {
   ];
 
   return (
-    <section id="portfolio" className="bg-blue-100 right-0 mx-auto py-4">
+    <section id="portfolio" className="bg-blue-100 mx-auto py-4">
       <div className="text-center">
         <div className="container py-2 m-auto">
           <h1 className="text-3xl mb-4 sm:mb-8 text-center font-medium">

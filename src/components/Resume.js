@@ -48,7 +48,7 @@ const Resume = (props) => {
   ];
 
   return (
-    <section id="resume" className="right-0 py-4 mx-auto bg-blue-400">
+    <section id="resume" className="py-4 mx-auto bg-blue-400">
       <div className="mx-2 sm:mx-4 md:mx-12 w-full sm:w-5/6 text-center block py-4 sm:py-8 sm:flex sm:justify-center">
         <div className="sm:w-1/4 sm:text-left">
           <p className="border-b-1 border-blue-700 text-center text-2xl font-medium">
@@ -72,9 +72,9 @@ const Resume = (props) => {
       </div>
       <div className="mx-2 sm:mx-4 md:mx-12 w-full sm:w-5/6 text-center block py-4 sm:py-8 sm:flex sm:justify-center">
         <div className="sm:w-1/4 sm:text-left">
-          <h1 className="font-sans border-b-1 border-blue-700 text-center text-2xl font-medium">
+          <p className="border-b-1 border-blue-700 text-center text-2xl font-medium">
             Skills
-          </h1>
+          </p>
         </div>
         <div className="px-4 sm:px-8 sm:w-4/5 mx-auto py-2">
           <p className="text-2xl text-left italic">
