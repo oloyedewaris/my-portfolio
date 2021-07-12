@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import "./media-queries.css";
 import App from "./App";
 import "core-js";
 import "react-app-polyfill/ie11";

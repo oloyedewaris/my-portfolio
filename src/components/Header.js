@@ -71,7 +71,7 @@ const Header = () => {
             </div>
           </nav>
         </div>
-        <div className="inline-block text-center  py-8 mx-2 xs:mx-auto w-full xs:w-5/6 lg:w-3/5 md:4/6">
+        <div className="inline-block text-center mt-8 py-8 mx-2 xs:mx-auto w-full xs:w-5/6 lg:w-3/5 md:4/6">
           <h1 className="align-top head text-6xl mx-auto my-2 font-mono">
             Waris Oloyede
           </h1>

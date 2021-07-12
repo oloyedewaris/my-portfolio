@@ -1,8 +1,21 @@
 {
-  "name": "portfolio",
-  "version": "1.0.0",
-  "description": "a portfolio app",
+  "name": "my-portfolio",
+  "version": "0.1.0",
   "private": true,
+  "dependencies": {
+    "@ant-design/icons": "^4.6.2",
+    "@craco/craco": "^6.2.0",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "core-js": "^3.15.2",
+    "react": "^17.0.2",
+    "react-app-polyfill": "^2.0.0",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3",
+    "react-typist": "^2.0.5",
+    "web-vitals": "^1.1.2"
+  },
   "scripts": {
     "start": "node server.js",
     "react": "craco start",
@@ -10,37 +23,11 @@
     "test": "craco test",
     "heroku-postbuild": "npm install && npm run build"
   },
-  "author": "waris",
-  "license": "ISC",
-  "dependencies": {
-    "@ant-design/icons": "^4.6.2",
-    "@craco/craco": "^6.1.2",
-    "antd": "^4.15.5",
-    "axios": "^0.21.1",
-    "bootstrap": "^5.0.1",
-    "core-js": "^3.12.1",
-    "formik": "^2.2.8",
-    "javascript-time-ago": "^2.3.5",
-    "moment": "^2.29.1",
-    "react": "^17.0.2",
-    "react-app-polyfill": "^2.0.0",
-    "react-dom": "^17.0.2",
-    "react-dropzone": "^11.3.2",
-    "react-image-gallery": "^1.0.9",
-    "react-loader-spinner": "^4.0.0",
-    "react-loading-skeleton": "^2.2.0",
-    "react-paypal-express-checkout": "^1.0.5",
-    "react-redux": "^7.2.4",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "^4.0.3",
-    "react-typist": "^2.0.5",
-    "reactstrap": "^8.9.0",
-    "redux": "^4.1.0",
-    "redux-promise": "^0.6.0",
-    "redux-thunk": "^2.3.0"
-  },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
   "browserslist": {
     "production": [

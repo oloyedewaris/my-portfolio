@@ -18,8 +18,26 @@ const Portfolio = () => {
       viewUrl: "https://waris-social-app.herokuapp.com",
     },
     {
-      name: "Online Calculator",
-      description: "Web calculator",
+      name: "ShoppGX",
+      description:
+        "Mern stack e-commerce application for selling laptops online",
+      tools: "React-hooks, Ant-design, MongoDB, Express, css3",
+      imgurl: ShoppGX,
+      githubUrl: "https://github.com/oloyedewaris/shoppGX",
+      viewUrl: "https://shoppgx.herokuapp.com/",
+    },
+    {
+      name: "Chatlify",
+      description:
+        "A chat application where users  can join a chat room  and start chatting",
+      tools: "React-hooks, css3, socket.io",
+      imgurl: Chatlify,
+      githubUrl: "https://github.com/oloyedewaris/chatlify-client",
+      viewUrl: "https://waris-chatlify.netlify.app ",
+    },
+    {
+      name: "Calculatify",
+      description: "A simple Web calculator",
       tools: "React, css3",
       imgurl: Calculatify,
       githubUrl: "https://github.com/oloyedewaris/react-calculator-app",
@@ -34,15 +52,6 @@ const Portfolio = () => {
       viewUrl: "https://waris-todolist.netlify.app",
     },
     {
-      name: "ShoppGX",
-      description:
-        "Mern stack e-commerce application for selling phones online",
-      tools: "React-hooks, Ant-design, MongoDB, Express, css3",
-      imgurl: ShoppGX,
-      githubUrl: "https://github.com/oloyedewaris/shoppGX",
-      viewUrl: "https://shoppgx.herokuapp.com/",
-    },
-    {
       name: "Weather App",
       description:
         "An application that shows weather information of user's location",
@@ -50,15 +59,6 @@ const Portfolio = () => {
       imgurl: Weatherlify,
       githubUrl: "https://github.com/oloyedewaris/react-weather-app",
       viewUrl: "https://waris-weatherlify.netlify.app",
-    },
-    {
-      name: "Chatlify",
-      description:
-        "A chat application where users  can join a chat room  and start chatting",
-      tools: "React-hooks, css3, socket.io",
-      imgurl: Chatlify,
-      githubUrl: "https://github.com/oloyedewaris/chatlify-client",
-      viewUrl: "https://waris-chatlify.netlify.app ",
     },
   ];
 
