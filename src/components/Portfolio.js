@@ -33,15 +33,15 @@ const Portfolio = () => {
       tools: "React-hooks, css3, socket.io",
       imgurl: Chatlify,
       githubUrl: "https://github.com/oloyedewaris/chatlify-client",
-      viewUrl: "https://waris-chatlify.netlify.app ",
+      viewUrl: "https://waris-chatlify.netlify.app",
     },
     {
       name: "Calculatify",
       description: "A simple Web calculator",
       tools: "React, css3",
       imgurl: Calculatify,
-      githubUrl: "https://github.com/oloyedewaris/react-calculator-app",
-      viewUrl: "https://waris-calculatify.herokuapp.com/",
+      githubUrl: "https://github.com/oloyedewaris/calculatify",
+      viewUrl: "https://calculatify.netlify.app/",
     },
     {
       name: "Todo List",

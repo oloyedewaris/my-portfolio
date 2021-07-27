@@ -13,7 +13,7 @@ const Header = () => {
   const socialLinks = [
     {
       name: "instagram",
-      url: "https://www.instagram.com//temi_topzee",
+      url: "https://www.instagram.com/waris_oloyede/"
       icon: <InstagramOutlined />,
     },
     {
