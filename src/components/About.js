@@ -15,16 +15,21 @@ const About = () => {
         </div>
         <div className="w-full md:w-4/5 md:mx-2 container">
           <h2 className="text-3xl font-medium">About Me</h2>
-          <p className="py-4 text-2xl">
+          <p className="py-4 text-xl">
             I am currently a 300 level student at Obafemi Awolowo University and
             pursuing my B.Sc in Computer Science from here. I am a self taught
             Full Stack Web Developer, currently diving deeper into Mobile
             Development. I believe that to be successful in life, one needs to
             be obsessive with their dreams and keep working towards them.
           </p>
-
+          <h2 className="text-3xl font-medium">My Expertise</h2>
+          <p className="py-4 text-xl">
+            My expertise is front-end development,
+            Building scalable components, layouts, user interfaces animations and many more features as a React Developer.
+            I also have Back-end development with Node JS, Express JS and MongoDB.
+          </p>
           <div className="py-auto inline-block text-left my-4">
-            <a href={resume} download="Waris-resume.docx">
+            <a href={resume} download="Waris-resume.pdf">
               <button className="rounded-full text-2xl text-white font-medium px-6 py-2 bg-blue-700 hover:bg-blue-800 hover:text-blue-200">
                 Download resume
               </button>

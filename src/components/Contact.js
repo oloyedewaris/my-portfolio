@@ -57,9 +57,9 @@ const ContactUs = (props) => {
           </a>
         </div>
       </div>
-      <div className="pr-4 sm:pr-12 py-4 lg:pr-24 flex justify-end">
+      <div className="pr-4 sm:pr-12 py-4 lg:pr-24 font-bold mx-4 flex justify-end">
         <aside className="py-2 text-2xl block">
-          <div className="font-bold">
+          <div className="">
             {contact.map(({ title, description }) =>
               <h4 className="py-2">{`${title}: ${description}`}</h4>
             )}

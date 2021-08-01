@@ -121,7 +121,7 @@ const Portfolio = () => {
                     )}
                   </div>
                 </div>
-                <p className="text-justify mx-2 sm:h-48 lg:h-52">{item.description}</p>
+                <p className="text-justify mx-2 sm:h-48 lg:h-44">{item.description}</p>
                 <div className="">
                   <h6 className="text-center">
                     <a
