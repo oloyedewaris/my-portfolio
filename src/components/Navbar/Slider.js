@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Main from "./Drawer/Main.js";
 import SlideDrawer from "./Drawer/Slidedrawer.js";
-import Backdrop from "./Drawer/Backdrop.js";
 
 const Slider = () => {
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -14,16 +13,10 @@ const Slider = () => {
     setDrawerOpen(false);
   };
 
-  let backdrop;
-  if (drawerOpen) {
-    backdrop = <Backdrop close={backdropClickHandler} />;
-  }
-
   return (
     <div>
       <SlideDrawer close={backdropClickHandler} show={drawerOpen} />
-      {backdrop}
-      <Main toggle={drawerToggleClickHandler} />
+      <Main show={drawerOpen} toggle={drawerToggleClickHandler} />
     </div>
   );
 };

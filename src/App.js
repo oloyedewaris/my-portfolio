@@ -5,7 +5,8 @@ import Resume from "./components/Resume";
 import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import Slider from "./components/Navbar/Slider"
+import Slider from "./components/Navbar/Slider";
+import "./App.css";
 
 const App = () => {
   return (

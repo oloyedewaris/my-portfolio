@@ -11,8 +11,17 @@ const Portfolio = () => {
   const portfolio = [
     {
       name: "SocialHub",
-      description: "Web based social application built with the mern stack",
-      tools: "React, Ant Design, MongoDB, Express, css3",
+      description:
+        "SocialHub is Web based social application similar to Facebook where users can share posts, likes and comments and also follow each other built with the mern stack.",
+      tools: [
+        "React",
+        "Redux",
+        "Ant Design",
+        "Node.js",
+        "MongoDB",
+        "Express",
+        "CSS3"
+      ],
       imgurl: SocialHub,
       githubUrl: "https://github.com/oloyedewaris/social-space",
       viewUrl: "https://waris-social-app.herokuapp.com",
@@ -20,42 +29,66 @@ const Portfolio = () => {
     {
       name: "ShoppGX",
       description:
-        "Mern stack e-commerce application for selling laptops online",
-      tools: "React-hooks, Ant-design, MongoDB, Express, css3",
+        "A Mern stack e-commerce application for selling laptops online. ShoppGX also includes features like user authentication, upload and deleting of products, order receipts, saved product, and also a live payment system which is just as sample",
+      tools: [
+        "React-hooks",
+        "Redux",
+        "Ant design",
+        "Node.js",
+        "MongoDB",
+        "Express",
+        "CSS3"
+      ],
       imgurl: ShoppGX,
       githubUrl: "https://github.com/oloyedewaris/shoppGX",
       viewUrl: "https://shoppgx.herokuapp.com/",
     },
     {
-      name: "Chatlify",
+      name: "Chatlify Web",
       description:
-        "A chat application where users  can join a chat room  and start chatting",
-      tools: "React-hooks, css3, socket.io",
+        "Chatlify is a web chat application where users can join a chat room  and start live-messaging",
+      tools: [
+        "React-hooks",
+        "CSS3",
+        "Node.js",
+        "Express",
+        "Socket.io"
+      ],
       imgurl: Chatlify,
       githubUrl: "https://github.com/oloyedewaris/chatlify-client",
       viewUrl: "https://waris-chatlify.netlify.app",
     },
     {
       name: "Calculatify",
-      description: "A simple Web calculator",
-      tools: "React, css3",
+      description: "A Web calculator with simple and basic functionality",
+      tools: [
+        "React",
+        "CSS3"
+      ],
       imgurl: Calculatify,
       githubUrl: "https://github.com/oloyedewaris/calculatify",
       viewUrl: "https://calculatify.netlify.app/",
     },
     {
       name: "Todo List",
-      description: "A Simple todo list application",
-      tools: "React, css3",
+      description: "A Simple todo list application for creating, deleting and editing todos",
+      tools: [
+        "React",
+        "CSS3"
+      ],
       imgurl: Todo,
       githubUrl: "https://github.com/oloyedewaris/react-todo-app",
       viewUrl: "https://waris-todolist.netlify.app",
     },
     {
-      name: "Weather App",
+      name: "Weatherlify App",
       description:
-        "An application that shows weather information of user's location",
-      tools: "React-hooks, Open weather map api, css3",
+        "An application that shows weather information of user's entered location. Weatherlify uses open weather map api to fetch live weather information",
+      tools: [
+        "React-hooks",
+        "Open-weather-map api",
+        "CSS3"
+      ],
       imgurl: Weatherlify,
       githubUrl: "https://github.com/oloyedewaris/react-weather-app",
       viewUrl: "https://waris-weatherlify.netlify.app",
@@ -63,32 +96,34 @@ const Portfolio = () => {
   ];
 
   return (
-    <section id="portfolio" className="bg-blue-100 mx-auto py-4">
+    <section id="portfolio" className="bg-blue-600 mx-auto py-4">
       <div className="text-center">
         <div className="container py-2 m-auto">
           <h1 className="text-3xl mb-4 sm:mb-8 text-center font-medium">
             Check Out Some of My Works.
           </h1>
-          <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2 mx-2 xs:mx-4 sm:mx-8 lg:mx-32 px-2 text-center place-items-center">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 mx-8 xs:mx-4 sm:mx-8 lg:mx-24 px-2 text-center place-items-center">
             {portfolio.map((item, i) => (
               <div key={i} className="my-2 px-2 shadow-lg">
-                <h5 className="mb-4 font-medium">{item.name}</h5>
-                <div className="inline-block w-auto relative text-center">
+                <h5 className="mb-4 text-2xl text-white font-medium">{item.name}</h5>
+                <div className="inline-block relative text-center">
                   <img
-                    className="rounded h-32 w-52"
+                    className="rounded h-32 w-56"
                     src={`${item.imgurl}`}
                     alt="work"
                   />
-                  <div className="overlay absolute inset-0 px-2 text-left">
-                    <h5 className="font-medium">{item.name}</h5>
-                    <p>{item.description}</p>
+                  <div className="overlay absolute inset-0 grid grid-cols-2 px-2">
+                    {item.tools.map(tool =>
+                      <div className="flex justify-start items-center">
+                        <div className="rounded-full h-2 w-2 bg-white mr-1" />
+                        {tool}
+                      </div>
+                    )}
                   </div>
                 </div>
-                <p className="text-center align-center content-center h-22 xs:h-16 sm:h-20 md:h-18 lg:h-16">
-                  {item.tools}
-                </p>
+                <p className="text-justify mx-2 sm:h-48 lg:h-52">{item.description}</p>
                 <div className="">
-                  <h6 style={{ textAlign: "center" }}>
+                  <h6 className="text-center">
                     <a
                       target="_blank"
                       rel="noopener noreferrer"
@@ -96,7 +131,7 @@ const Portfolio = () => {
                     >
                       <GithubOutlined
                         style={{ fontSize: "25px", margin: "10px" }}
-                        className="hover:text-blue-800"
+                        className="hover:text-white"
                       />
                     </a>
                     <a
@@ -106,7 +141,7 @@ const Portfolio = () => {
                     >
                       <EyeOutlined
                         style={{ fontSize: "25px", margin: "10px" }}
-                        className="hover:text-blue-800"
+                        className="hover:text-white"
                       />
                     </a>
                   </h6>
