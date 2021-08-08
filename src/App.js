@@ -10,7 +10,7 @@ import "./App.css";
 
 const App = () => {
   return (
-    <div className="w-full">
+    <div>
       <Header />
       <Slider />
       <About />

@@ -31,9 +31,9 @@ const ContactUs = (props) => {
     <section id="contact" className="bg-blue-700">
       <div className="px-4 md:px-18 sm:px-12 lg:px-36 align-center inline-block">
         <div className="py-4 sm:py-2 m-auto">
-          <div className="py-2 flex w-full justify-center">
+          <div className="py-2 flex justify-center">
             <MailOutlined className="w-1/5 font-bold text-5xl xs:text-6xl sm:text-8xl my-auto py-2" />
-            <p className="w-4/5 text-2xl text-center m-auto font-medium">
+            <p className="w-4/5 text-lg sm:text:xl lg:2xl text-center m-auto font-medium">
               Feel free to contact me for any work or suggestions below
             </p>
           </div>
@@ -49,7 +49,7 @@ const ContactUs = (props) => {
             href={`https://wa.me/2348108745769?text=${Message}`}
           >
             <button
-              className="bg-blue-900 rounded my-2 text-center py-2 px-4 font-medium hover:bg-blue-900"
+              className="bg-blue-800 rounded-full my-2 text-center py-1 px-4 font-medium hover:bg-blue-900"
               onClick={clickHandler}
             >
               Send
@@ -58,7 +58,7 @@ const ContactUs = (props) => {
         </div>
       </div>
       <div className="pr-4 sm:pr-12 py-4 lg:pr-24 font-bold mx-4 flex justify-end">
-        <aside className="py-2 text-2xl block">
+        <aside className="py-2 text-lg sm:text:xl lg:2xl block">
           <div className="">
             {contact.map(({ title, description }) =>
               <h4 className="py-2">{`${title}: ${description}`}</h4>

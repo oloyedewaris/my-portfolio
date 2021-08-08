@@ -96,23 +96,25 @@ const Portfolio = () => {
   ];
 
   return (
-    <section id="portfolio" className="bg-blue-600 mx-auto py-4">
+    <section id="portfolio" className="bg-blue-600 mx-auto py-4 sm:px-12 md:px-36">
       <div className="text-center">
         <div className="container py-2 m-auto">
           <h1 className="text-3xl mb-4 sm:mb-8 text-center font-medium">
             Check Out Some of My Works.
           </h1>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 mx-8 xs:mx-4 sm:mx-8 lg:mx-24 px-2 text-center place-items-center">
+          <div
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 mx-8 lg:mx-24 px-2"
+          >
             {portfolio.map((item, i) => (
-              <div key={i} className="my-2 px-2 shadow-lg">
+              <div key={i} className="my-2 px-2 img-container">
                 <h5 className="mb-4 text-2xl text-white font-medium">{item.name}</h5>
                 <div className="inline-block relative text-center">
                   <img
-                    className="rounded h-32 w-56"
+                    className="rounded h-32 w-60"
                     src={`${item.imgurl}`}
-                    alt="work"
+                    alt="my work"
                   />
-                  <div className="overlay absolute inset-0 grid grid-cols-2 px-2">
+                  <div className="overlay absolute inset-0 grid grid-cols-2 px-1">
                     {item.tools.map(tool =>
                       <div className="flex justify-start items-center">
                         <div className="rounded-full h-2 w-2 bg-white mr-1" />
@@ -121,7 +123,12 @@ const Portfolio = () => {
                     )}
                   </div>
                 </div>
-                <p className="text-justify mx-2 sm:h-48 lg:h-44">{item.description}</p>
+                <div className="details-button text-center mx-2 w-full">
+                  <button className="px-4 rounded-full mt-1 bg-blue-700 font-medium text-white-200">Preview</button>
+                  <p>
+                    {item.description}
+                  </p>
+                </div>
                 <div className="">
                   <h6 className="text-center">
                     <a
@@ -131,7 +138,7 @@ const Portfolio = () => {
                     >
                       <GithubOutlined
                         style={{ fontSize: "25px", margin: "10px" }}
-                        className="hover:text-white"
+                        className="hover:text-blue-800"
                       />
                     </a>
                     <a
@@ -141,7 +148,7 @@ const Portfolio = () => {
                     >
                       <EyeOutlined
                         style={{ fontSize: "25px", margin: "10px" }}
-                        className="hover:text-white"
+                        className="hover:text-blue-800"
                       />
                     </a>
                   </h6>

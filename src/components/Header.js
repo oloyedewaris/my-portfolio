@@ -45,12 +45,12 @@ const Header = () => {
 
   return (
     <React.Fragment>
-      <header id="waris" className="header-background flex justify-center flex-col">
+      <header id="waris" className="header-background flex justify-around flex-col">
         <div className="z-10 nav bg-blue-900 fixed left-0 top-0 right-0 flex justify-center">
-          <nav className="h-18 text-white flex py-3 mx-4 w-full sm:w-2/4 justify-center md:w-3/4">
+          <nav className="h-16 text-white flex py-3 mx-4 sm:w-2/4 justify-center md:w-3/4">
             <a
               href="#"
-              className=" mx-8 text-center px-4 font-medium text-4xl sm:w-1/4 hover:text-blue-600 mx-auto"
+              className="text-center px-4 font-medium text-4xl sm:w-1/4 hover:text-blue-600 mx-auto"
             >
               Waris
             </a>
@@ -59,7 +59,6 @@ const Header = () => {
                 About
               </a>
               <a href="#resume" className="text-3xl mx-auto font-medium py-2 hover:text-blue-600 px-4 py-2 rounded">
-
                 Resume
               </a>
               <a href="#portfolio" className="text-3xl mx-auto font-medium py-2 hover:text-blue-600 px-4 py-2 rounded">
@@ -71,17 +70,16 @@ const Header = () => {
             </div>
           </nav>
         </div>
-        <div className="inline-block text-center py-8 mx-2 xs:mx-auto w-full xs:w-5/6 lg:w-3/5 md:4/6">
-          <div className="text-6xl mx-auto my-2">
+        <div className="inline-block text-center pt-10 mx-2 xs:mx-auto xs:w-5/6 lg:w-3/5 md:4/6">
+          <div className="text-5xl sm:text-6xl  mx-auto my-2">
             WARIS OLOYEDE
           </div>
           <h3 className="font-sans px-auto text-center text-coolGrey-200">
             <Typist cursor={{ show: false }} startDelay={2500}>
-              <p className="border-b-1 border-blue-700 text-2xl py-6">
+              <p className="border-b-1 border-blue-700 text-xl sm:text-2xl py-6">
                 I am a React Full-Stack(Mern) Developer. I enjoy building
                 applications ranging from simple front-end apps to full-stack
-                apps with the help of some latest technologies in my free
-                time.
+                apps with the help of some latest technologies.
               </p>
             </Typist>
           </h3>
@@ -90,7 +88,7 @@ const Header = () => {
             {socialLinks.map((link) => (
               <p className="text-center mx-1 xs:mx-2 my-4 py-2 sm:mx-4" key={link.name}>
                 <a
-                  className="text-4xl hover:text-blue-800"
+                  className="text-3xl sm:text-4xl hover:text-blue-800"
                   href={link.url}
                   target="_blank"
                   rel="noopener noreferrer"

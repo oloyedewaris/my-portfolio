@@ -3,8 +3,8 @@ html, body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  font-size: medium;
 }
+
 
 .overlay {
   opacity: 0;
@@ -30,17 +30,42 @@ html, body {
 }
 
 .header-background {
-  background-size: cover;
+  background-size: 1000vw;
   height: 100vh;
-  background: linear-gradient(
-    136deg,
-    #4484ce,
-    #1ad7c0,
-    #ff9b11,
-    #9b59b6,
-    #ff7f7f,
-    #ecf0f1
+  background-image: linear-gradient(
+    135deg,
+    #845ec2,
+    #d65db1,
+    #ff6f91,
+    #ff9671,
+    #ffc75f,
+    #f9f871
   );
+  background-position: left;
+  animation: bg 10s infinite alternate;
+}   
+
+@keyframes bg {
+  from {
+     background-position: right;
+  }
+  to{
+    background-position: left;
+  }
+}
+
+.img-container {
+  box-shadow: 5px rgba(0, 0, 0, 0.1);
+}
+
+.details-button {
+  height: 30px;
+  overflow-y: hidden;
+  transition: height 1s;
+}
+
+.details-button:hover {
+  height: fit-content;
 }
 
 /* media queries */

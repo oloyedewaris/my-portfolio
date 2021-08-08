@@ -63,10 +63,10 @@ const Resume = () => {
   ];
 
   return (
-    <section id="resume" className="py-4 mx-auto bg-blue-500">
-      <div className="mx-2 sm:mx-4 md:mx-12 w-full sm:w-5/6 text-center block py-4 sm:py-8 sm:flex sm:justify-center">
-        <div className="sm:w-1/4 sm:text-left">
-          <p className="text-gray-600 text-center text-3xl font-medium">
+    <section id="resume" className="py-4 mx-auto bg-blue-500  sm:px-12 md:px-36">
+      <div className="mx-2 sm:mx-4 md:mx-12 sm:w-5/6 text-center block py-4 sm:py-8 sm:flex sm:justify-center">
+        <div className="sm:w-1/4 sm:text-left mb-4 inline-block text-center">
+          <p className="text-gray-600 text-center text-3xl font-medium w-28" style={{ borderBottom: "3px solid blue" }}>
             Services
           </p>
         </div>
@@ -75,7 +75,7 @@ const Resume = () => {
             return (
               <div className="" key={i}>
                 <div className="mx-auto py-2">
-                  <h3 className="font-medium">{item.service}</h3>
+                  <h3 className="text-xl font-medium underline">{item.service}</h3>
                   <p className="">{item.specialization}</p>
                 </div>
               </div>
@@ -83,9 +83,9 @@ const Resume = () => {
           })}
         </div>
       </div>
-      <div className="mx-2 sm:mx-4 md:mx-12 w-full sm:w-5/6 text-center block py-4 sm:py-8 sm:flex sm:justify-center">
-        <div className="sm:w-1/4 sm:text-left">
-          <p className="text-gray-600 text-center text-3xl font-medium">
+      <div className="mx-2 sm:mx-4 md:mx-12 sm:w-5/6 text-center block py-4 sm:py-8 sm:flex sm:justify-center">
+        <div className="sm:w-1/4 sm:text-left mb-4 inline-block text-center">
+          <p className="text-gray-600 text-center text-3xl font-medium w-20" style={{ borderBottom: "3px solid blue" }}>
             Skills
           </p>
         </div>
