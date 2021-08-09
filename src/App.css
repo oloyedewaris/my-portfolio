@@ -42,7 +42,7 @@ html, body {
     #f9f871
   );
   background-position: left;
-  animation: bg 10s infinite alternate;
+  animation: bg 7s infinite alternate;
 }   
 
 @keyframes bg {
