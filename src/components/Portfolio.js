@@ -103,7 +103,7 @@ const Portfolio = () => {
             Check Out Some of My Works.
           </h1>
           <div
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 mx-8 lg:mx-24 px-2"
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 mx-2 xs:mx-4 sm:mx-8 lg:mx-20 px-2"
           >
             {portfolio.map((item, i) => (
               <div key={i} className="my-2 px-2 img-container">

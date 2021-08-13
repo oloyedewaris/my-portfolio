@@ -46,7 +46,7 @@ const Header = () => {
   return (
     <React.Fragment>
       <header id="waris" className="header-background flex justify-around flex-col">
-        <div className="z-10 nav bg-blue-900 fixed left-0 top-0 right-0 flex justify-center">
+        <div className="z-10 bg-blue-900 nav fixed left-0 top-0 right-0 flex justify-center">
           <nav className="h-16 text-white flex py-3 mx-4 sm:w-2/4 justify-center md:w-3/4">
             <a
               href="#"
