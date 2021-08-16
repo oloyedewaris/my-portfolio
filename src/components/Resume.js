@@ -19,47 +19,70 @@ const Resume = () => {
     },
   ];
 
-  const skills = [
+  const skill = [
     {
-      skillname: "JavaScript (ES6+)",
-      level: "87%"
+      name: "Frameworks/Languages",
+      skills: [
+        {
+          skillname: "JavaScript (ES6+)",
+          level: "87%"
+        },
+        {
+          skillname: " ReactJS/Redux",
+          level: "92%"
+        },
+        {
+          skillname: " React Native",
+          level: "65%"
+        },
+        {
+          skillname: "NextJS",
+          level: "60%"
+        },
+        {
+          skillname: "HTML5/CSS3/LESS",
+          level: "71%"
+        },
+        {
+          skillname: " NodeJS/ExpressJS",
+          level: "78%"
+        }
+      ]
     },
     {
-      skillname: " ReactJS/Redux/Hooks",
-      level: "92%"
+      name: "UI Libraries/Tools",
+      skills: [
+        {
+          skillname: "Bootstrap/Material UI/Ant-design",
+          level: "75%"
+        },
+        {
+          skillname: "Tailwind-CSS, React-hooks, Formik",
+          level: "67%"
+        },
+        {
+          skillname: "Axios/Bcrypt/Json web tokens",
+          level: "85%"
+        },
+      ]
     },
     {
-      skillname: " React Native",
-      level: "65%"
-    },
-    {
-      skillname: "NextJS",
-      level: "60%"
-    },
-    {
-      skillname: "HTML5/CSS3/LESS/Tailwind-CSS",
-      level: "71%"
-    },
-    {
-      skillname: "Bootstrap/Material UI/And-design",
-      level: "75%"
-    },
-    {
-      skillname: " NodeJS/ExpressJS",
-      level: "78%"
-    },
-    {
-      skillname: "WebSockets/Socket.io",
-      level: "68%"
-    },
-    {
-      skillname: " MongoDB/Mongoose",
-      level: "72%"
-    },
-    {
-      skillname: "Git/Github/FireBase",
-      level: "64%"
-    },
+      name: "DevOps/Web Services",
+      skills: [
+        {
+          skillname: "WebSockets/Socket.io",
+          level: "68%"
+        },
+        {
+          skillname: " MongoDB/Mongoose",
+          level: "72%"
+        },
+        {
+          skillname: "Git/Github/FireBase",
+          level: "64%"
+        },
+      ]
+    }
   ];
 
   return (
@@ -90,16 +113,21 @@ const Resume = () => {
           </p>
         </div>
         <div className="px-2 sm:px-8 sm:w-4/5 mx-auto py-auto">
-          <div className="my-2 font-mono">
-            {skills.map((item, i) => (
-              <div className="mx-auto text-left py-2" key={i}>
-                <div>
-                  {item.skillname}
-                </div>
-                <div className="block">
-                  <div style={{ width: item.level }} className="bg-blue-800 rounded-full h-4" />
-                  {item.level}
-                </div>
+          <div className="my-2">
+            {skill.map((category) => (
+              <div>
+                <div className="my-4 text-gray-300 text-xl font-medium mx-auto">{category.name}</div>
+                <div>{category.skills.map((item, i) => (
+                  <div className="mx-auto text-left py-2" key={i}>
+                    <div>
+                      {item.skillname}
+                    </div>
+                    <div className="block">
+                      <div style={{ width: item.level }} className="bg-blue-800 rounded-full h-4" />
+                      {item.level}
+                    </div>
+                  </div>
+                ))}</div>
               </div>
             ))}
           </div>
