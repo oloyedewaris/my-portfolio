@@ -34,12 +34,12 @@ html, body {
   height: 100vh;
   background-image: linear-gradient(
     135deg,
-    #845ec2,
-    #d65db1,
-    #ff6f91,
-    #ff9671,
+    #f9f871,
     #ffc75f,
-    #f9f871
+    #ff9671,
+    #ff6f91,
+    #d65db1,
+    #845ec2
   );
   background-position: left;
   animation: bg 7s infinite alternate;
