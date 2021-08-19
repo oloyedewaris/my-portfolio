@@ -23,7 +23,7 @@ const About = () => {
             Development. I believe that to be successful in life, one needs to
             be obsessive with their dreams and keep working towards them.
           </p>
-          <h2 className="text-3xl mt-4 font-medium">My Expertise</h2>
+          <h2 className="text-3xl mt-4  font-medium">My Expertise</h2>
           <p className="py-4 sm:text-xl">
             My expertise is front-end development,
             Building scalable components, layouts, user interfaces animations and many more features as a React Developer.
