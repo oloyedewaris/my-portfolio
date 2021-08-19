@@ -11,7 +11,7 @@ html, body {
   color: white;
 }
 .overlay:hover {
-  background: url("./Utils/images/overlay-bg.png") repeat;
+  background: url("./utils/images/overlay-bg.png") repeat;
   widows: 100%;
   height: 100%;
   opacity: 0.95;

@@ -1,10 +1,10 @@
 import React from "react";
-import SocialHub from "../Utils/images/portfolio/socialhub.png";
-import Calculatify from "../Utils/images/portfolio/calculatify.png";
-import Todo from "../Utils/images/portfolio/todo.png";
-import Weatherlify from "../Utils/images/portfolio/weatherlify.png";
-import Chatlify from "../Utils/images/portfolio/chatlify.png";
-import ShoppGX from "../Utils/images/portfolio/shoppgx.png";
+import SocialHub from "../utils/images/portfolio/socialhub.png";
+import Calculatify from "../utils/images/portfolio/calculatify.png";
+import Todo from "../utils/images/portfolio/todo.png";
+import Weatherlify from "../utils/images/portfolio/weatherlify.png";
+import Chatlify from "../utils/images/portfolio/chatlify.png";
+import ShoppGX from "../utils/images/portfolio/shoppgx.png";
 import { EyeOutlined, GithubOutlined } from "@ant-design/icons";
 
 const Portfolio = () => {

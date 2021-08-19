@@ -1,7 +1,7 @@
 import React from "react";
 import { DownloadOutlined } from "@ant-design/icons";
-import ProfileImg from "../Utils/images/profilepic.jpg";
-import resume from "../Utils/Waris_resume.pdf";
+import ProfileImg from "../utils/images/profilepic.jpg";
+import resume from "../utils/Waris_resume.pdf";
 
 const About = () => {
   return (
@@ -17,9 +17,9 @@ const About = () => {
         <div className="w-full md:w-4/5 md:mx-2 container">
           <h2 className="text-3xl mt-4 font-medium">About Me</h2>
           <p className="py-4 sm:text-xl">
-            I am currently a 300 level student at Obafemi Awolowo University and
+            I am a 300 level student at Obafemi Awolowo University and
             pursuing my B.Sc in Computer Science from here. I am a self taught
-            Full Stack Web Developer, currently diving deeper into Mobile
+            Full Stack Web Developer, diving deeper into Mobile
             Development. I believe that to be successful in life, one needs to
             be obsessive with their dreams and keep working towards them.
           </p>
@@ -27,7 +27,7 @@ const About = () => {
           <p className="py-4 sm:text-xl">
             My expertise is front-end development,
             Building scalable components, layouts, user interfaces animations and many more features as a React Developer.
-            I also have Back-end development with Node JS, Express JS and MongoDB.
+            I also have Back-end development skill and experience with Node JS, Express JS and MongoDB.
           </p>
           <div className="py-auto inline-block text-left my-4">
             <a href={resume} download="Waris-resume.pdf">
