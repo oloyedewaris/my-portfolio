@@ -1,7 +1,7 @@
 import React from "react";
 import { DownloadOutlined } from "@ant-design/icons";
-import ProfileImg from "../utils/images/profilepic.jpg";
-import resume from "../utils/Waris_resume.pdf";
+import ProfileImg from "../Utils/images/profilepic.jpg";
+import resume from "../Utils/Waris_resume.pdf";
 
 const About = () => {
   return (
