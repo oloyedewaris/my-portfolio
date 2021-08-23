@@ -9,20 +9,20 @@ const SlideDrawer = (props) => {
 
   return (
     <div className={`${drawerClasses} bg-blue-800`}>
-      <div className="flex flex-col py-8 mx-2">
-        <div className="text-5xl text-left font-mono px-4 py-4">
-          <a onClick={props.close} href="#">Home</a>
+      <div className="flex flex-col py-2 mx-2">
+        <div className="text-4xl text-left text-white font-medium mx-8 py-4">
+          <a onClick={props.close} href="#">Waris</a>
         </div>
-        <div className="text-5xl text-left font-mono px-4 py-4">
+        <div className="text-4xl text-left text-white font-medium mx-8 py-4">
           <a onClick={props.close} href="#about">About</a>
         </div>
-        <div className="text-5xl text-left font-mono px-4 py-4">
+        <div className="text-4xl text-left text-white font-medium mx-8 py-4">
           <a onClick={props.close} href="#resume">Resume</a>
         </div>
-        <div className="text-5xl text-left font-mono px-4 py-4">
+        <div className="text-4xl text-left text-white font-medium mx-8 py-4">
           <a onClick={props.close} href="#portfolio">Portfolio</a>
         </div>
-        <div className="text-5xl text-left font-mono px-4 py-4">
+        <div className="text-4xl text-left text-white font-medium mx-8 py-4">
           <a onClick={props.close} href="#contact">Contact</a>
         </div>
       </div>

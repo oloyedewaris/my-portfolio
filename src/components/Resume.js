@@ -96,11 +96,9 @@ const Resume = () => {
         <div className=" flex sm:w-4/5 flex flex-col justify-center text-center sm:text-left px-2 sm:px-4">
           {work.map((item, i) => {
             return (
-              <div className="" key={i}>
-                <div className="mx-auto py-2">
-                  <h3 className="text-xl font-medium underline">{item.service}</h3>
-                  <p className="">{item.specialization}</p>
-                </div>
+              <div className="mx-auto py-2" key={Math.random()}>
+                <h3 className="text-xl font-medium underline">{item.service}</h3>
+                <p className="">{item.specialization}</p>
               </div>
             );
           })}
@@ -115,15 +113,15 @@ const Resume = () => {
         <div className="px-2 sm:px-8 sm:w-4/5 mx-auto py-auto">
           <div className="my-2">
             {skill.map((category) => (
-              <div>
+              <div key={Math.random()}>
                 <div className="my-4 text-gray-300 text-xl font-medium mx-auto">{category.name}</div>
                 <div>{category.skills.map((item, i) => (
-                  <div className="mx-auto text-left py-2" key={i}>
+                  <div className="mx-auto text-left py-2" key={Math.random()}>
                     <div>
                       {item.skillname}
                     </div>
                     <div className="block">
-                      <div style={{ width: item.level }} className="bg-blue-800 rounded-full h-4" />
+                      <div style={{ width: item.level }} className="bg-blue-900 h-2" />
                       {item.level}
                     </div>
                   </div>

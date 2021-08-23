@@ -1,14 +1,14 @@
 .side-drawer {
-  padding-top: 10vh;
+  padding-top: 5vh;
   height: 100%;
   position: fixed;
   bottom: 0;
   right: 0;
   width: 100%;
   z-index: 2;
-  box-shadow: 1px #f3f1f1;
   transform: translateY(100%);
   transition: transform 1.5s ease-out;
+  color: white;
 }
 .side-drawer.open {
   transform: translateY(0);

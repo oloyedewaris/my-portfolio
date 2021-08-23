@@ -12,7 +12,7 @@ const Portfolio = () => {
     {
       name: "SocialHub",
       description:
-        "SocialHub is Web based social application similar to Facebook where users can share posts, likes and comments and also follow each other built with the mern stack.",
+        "SocialHub is Web based social application users can share posts, likes and comments and also follow each other built with the mern stack.",
       tools: [
         "React",
         "Redux",
@@ -106,7 +106,7 @@ const Portfolio = () => {
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 mx-2 xs:mx-4 sm:mx-8 lg:mx-20 px-2"
           >
             {portfolio.map((item, i) => (
-              <div key={i} className="my-2 px-2 img-container">
+              <div key={Math.random()} className="my-2 px-2 img-container">
                 <h5 className="mb-4 text-2xl text-white font-medium">{item.name}</h5>
                 <div className="inline-block relative text-center">
                   <img
@@ -116,7 +116,7 @@ const Portfolio = () => {
                   />
                   <div className="overlay absolute inset-0 grid grid-cols-2 px-1">
                     {item.tools.map(tool =>
-                      <div className="flex justify-start items-center">
+                      <div key={Math.random()} className="flex justify-start items-center">
                         <div className="rounded-full h-2 w-2 bg-white mr-1" />
                         {tool}
                       </div>

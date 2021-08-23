@@ -34,13 +34,13 @@ const ContactUs = (props) => {
           <div className="py-2 flex justify-center">
             <MailOutlined className="w-1/5 font-bold text-5xl xs:text-6xl sm:text-8xl my-auto py-2" />
             <p className="w-4/5 text-lg sm:text-xl md:text-2xl text-center m-auto font-medium">
-              Feel free to contact me for any work or suggestions below
+              Feel free to contact me for any work or suggestion below
             </p>
           </div>
           <textarea
-            className="w-2/5 outline-0 bg-blue-600 text-black-100 h-24 rounded text-left px-2 py-4 my-4"
+            className="w-2/5 outline-none bg-blue-500 contact-input h-24 rounded text-left px-2 py-4 my-4"
             onChange={messageHandler}
-            placeholder="Message me right now"
+            placeholder="Message me now"
           />{" "}
           <br />
           <a
@@ -61,7 +61,7 @@ const ContactUs = (props) => {
         <aside className="py-2 text-lg sm:text-xl md:text-2xl block">
           <div className="">
             {contact.map(({ title, description }) =>
-              <h4 className="py-2">{`${title}: ${description}`}</h4>
+              <h4 key={Math.random()} className="py-2">{`${title}: ${description}`}</h4>
             )}
           </div>
         </aside>
