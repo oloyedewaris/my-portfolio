@@ -9,7 +9,7 @@ import {
 } from "@ant-design/icons";
 import Typist from "react-typist";
 
-const Header = () => {
+const Header = ({ color }) => {
   const socialLinks = [
     {
       name: "instagram",
@@ -46,7 +46,7 @@ const Header = () => {
   return (
     <React.Fragment>
       <header id="waris" className="header-background flex justify-around flex-col">
-        <div className="media-nav z-10 bg-blue-900 nav fixed left-0 top-0 right-0 flex justify-center">
+        <div className={`media-nav z-10 nav fixed left-0 top-0 right-0 flex justify-center ${color}`}>
           <nav className="h-16 text-white flex py-3 mx-4 sm:w-2/4 justify-center md:w-3/4">
             <a
               href="#"
@@ -77,7 +77,7 @@ const Header = () => {
           <h3 className="font-sans px-auto text-center text-coolGrey-200">
             <Typist cursor={{ show: false }} startDelay={2500}>
               <p className="border-b-1 border-blue-700 text-xl py-6">
-                I am a React Full-Stack(Mern) Developer. I enjoy building
+                I am a React Full-Stack Developer. I enjoy building
                 applications ranging from simple front-end apps to full-stack
                 apps with the help of some latest technologies.
               </p>

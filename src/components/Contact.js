@@ -52,7 +52,7 @@ const ContactUs = () => {
             href={`https://wa.me/2348108745769?text=${Message}`}
           >
             <button
-              className="hover:bg-blue-600 hover:text-white border-2 border-blue-600 rounded-full my-2 text-center py-1 px-4 font-medium hover:bg-blue-900"
+              className="bg-blue-600 text-white border-2 border-blue-600 rounded-full my-2 text-center py-1 px-4 font-medium hover:bg-blue-900"
               onClick={clickHandler}
             >
               Send

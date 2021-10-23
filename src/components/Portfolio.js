@@ -114,35 +114,21 @@ const Portfolio = () => {
                     src={`${item.imgurl}`}
                     alt="my work"
                   />
-                  <div className="overlay absolute inset-0 grid grid-cols-2 px-1 w-full h-100">
-                    <h6 className="flex justify-center align-center">
-                      <a target="_blank" rel="noopener noreferrer" href={item.githubUrl}>
-                        <GithubOutlined
-                          style={{ fontSize: "25px", margin: "10px" }}
-                          className="hover:text-blue-800"
-                        />
-                      </a>
-                      <a target="_blank" rel="noopener noreferrer" href={item.viewUrl}>
-                        <EyeOutlined
-                          style={{ fontSize: "25px", margin: "10px" }}
-                          className="hover:text-blue-800"
-                        />
-                      </a>
-                    </h6>
-                    {/* {item.tools.map(tool =>
-                      <div key={Math.random()} className="flex justify-start items-center">
-                        <div className="rounded-full h-2 w-2 bg-white mr-1" />
-                        {tool}
-                      </div>
-                    )} */}
+                  <div className="flex justify-center items-center overlay absolute inset-0 grid grid-cols-2 px-1 w-full h-100">
+                    <a target="_blank" rel="noopener noreferrer" href={item.githubUrl}>
+                      <GithubOutlined
+                        style={{ fontSize: "25px", margin: "10px" }}
+                        className="hover:text-blue-800"
+                      />
+                    </a>
+                    <a target="_blank" rel="noopener noreferrer" href={item.viewUrl}>
+                      <EyeOutlined
+                        style={{ fontSize: "25px", margin: "10px" }}
+                        className="hover:text-blue-800"
+                      />
+                    </a>
                   </div>
                 </div>
-                {/* <div className="details-button text-center mx-2 w-full">
-                  <button className="px-4 rounded-full mt-1 bg-blue-700 font-medium text-white-200">Preview</button>
-                  <p>
-                    {item.description}
-                  </p>
-                </div> */}
               </div>
             ))}
           </div>
