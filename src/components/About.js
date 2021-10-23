@@ -5,7 +5,7 @@ import resume from "../Utils/Waris_resume.pdf";
 
 const About = () => {
   return (
-    <section id="about" className="bg-blue-400 py-4 px-2">
+    <section id="about" className="bg-blue-100 py-4 px-2">
       <div className="block mx-4 md:m-2 lg:m-4 block md:flex sm:px-12 md:px-36">
         <div className="container w-full md:w-1/5 flex justify-center align-middle mx-auto py-auto">
           <img
@@ -15,16 +15,16 @@ const About = () => {
           />
         </div>
         <div className="w-full md:w-4/5 md:mx-2 container">
-          <h2 className="text-3xl mt-4 font-medium">About Me</h2>
-          <p className="py-4 sm:text-xl">
+          <h2 className="text-2xl mt-4 font-medium text-blue-800">About Me</h2>
+          <p className="py-4">
             I am a 300 level student at Obafemi Awolowo University and
             pursuing my B.Sc in Computer Science from here. I am a self taught
             Full Stack Web Developer, diving deeper into Mobile
             Development. I believe that to be successful in life, one needs to
             be obsessive with their dreams and keep working towards them.
           </p>
-          <h2 className="text-3xl mt-4  font-medium">My Expertise</h2>
-          <p className="py-4 sm:text-xl">
+          <h2 className="text-2xl mt-4  font-medium text-blue-800">My Expertise</h2>
+          <p className="py-4">
             My expertise is front-end development,
             Building scalable components, layouts, user interfaces animations and many more features as a React Developer.
             I also have Back-end development skill and experience with Node JS, Express JS and MongoDB.

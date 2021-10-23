@@ -1,19 +1,23 @@
 import React from "react";
+import { CloudSyncOutlined, LaptopOutlined, TeamOutlined } from "@ant-design/icons"
 
 const Resume = () => {
   const work = [
     {
+      icon: <LaptopOutlined />,
       service: "Responsive Websites/Web Application",
       specialization:
         "I build responsive, pixel perfect and interactive websites/web apps for desktops, tablets and mobile devices",
     },
     {
-      service: "React Components and Working in Team",
+      icon: <TeamOutlined />,
+      service: "Building Components and Working in Team",
       specialization:
         "I am also good at building and managing React-based components, plugins, themes and layouts and also working in team",
     },
     {
-      service: "Restful APIs/Back End Utilities",
+      icon: <CloudSyncOutlined />,
+      service: "Restful APIs/Back-end Utilities/Micro-services",
       specialization:
         "With my Full-stack expertise and experience, I am able to build restful APIs which will be used by front-end engineers with the help of Node JS, Express JS and Mongo DB",
     },
@@ -86,10 +90,10 @@ const Resume = () => {
   ];
 
   return (
-    <section id="resume" className="py-4 mx-auto bg-blue-500  sm:px-12 md:px-36">
+    <section id="resume" className="py-4 mx-auto sm:px-12 md:px-36">
       <div className="mx-2 sm:mx-4 md:mx-12 sm:w-5/6 text-center block py-4 sm:py-8 sm:flex sm:justify-center">
         <div className="sm:w-1/4 sm:text-left mb-4 inline-block text-center">
-          <p className="text-gray-600 text-center text-3xl font-medium w-28" style={{ borderBottom: "3px solid blue" }}>
+          <p className="text-blue-700 text-center text-2xl font-medium underline">
             Services
           </p>
         </div>
@@ -97,7 +101,8 @@ const Resume = () => {
           {work.map((item, i) => {
             return (
               <div className="mx-auto py-2" key={Math.random()}>
-                <h3 className="text-xl font-medium underline">{item.service}</h3>
+                <div className="text-2xl text-blue-900">{item.icon}</div>
+                <h3 className="text-xl font-medium">{item.service}</h3>
                 <p className="">{item.specialization}</p>
               </div>
             );
@@ -106,7 +111,7 @@ const Resume = () => {
       </div>
       <div className="mx-2 sm:mx-4 md:mx-12 sm:w-5/6 text-center block py-4 sm:py-8 sm:flex sm:justify-center">
         <div className="sm:w-1/4 sm:text-left mb-4 inline-block text-center">
-          <p className="text-gray-600 text-center text-3xl font-medium w-20" style={{ borderBottom: "3px solid blue" }}>
+          <p className="text-blue-700 text-center text-2xl font-medium underline">
             Skills
           </p>
         </div>
@@ -114,15 +119,19 @@ const Resume = () => {
           <div className="my-2">
             {skill.map((category) => (
               <div key={Math.random()}>
-                <div className="my-4 text-gray-300 text-xl font-medium mx-auto">{category.name}</div>
+                <div className="my-4 text-blue-600 text-xl font-medium mx-auto">{category.name}</div>
                 <div>{category.skills.map((item, i) => (
                   <div className="mx-auto text-left py-2" key={Math.random()}>
-                    <div>
-                      {item.skillname}
+                    <div className="h-6 relative">
+                      <div className="absolute left-0">
+                        {item.skillname}
+                      </div>
+                      <div className="absolute right-0">
+                        {item.level}
+                      </div>
                     </div>
-                    <div className="block">
-                      <div style={{ width: item.level }} className="bg-blue-900 h-2" />
-                      {item.level}
+                    <div className="bg-blue-100 relative h-2">
+                      <div style={{ width: item.level }} className="bg-blue-700 h-2 left-0 absolute" />
                     </div>
                   </div>
                 ))}</div>

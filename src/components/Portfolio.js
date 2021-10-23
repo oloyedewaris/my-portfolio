@@ -96,10 +96,10 @@ const Portfolio = () => {
   ];
 
   return (
-    <section id="portfolio" className="bg-blue-600 mx-auto py-4 sm:px-12 md:px-36">
+    <section id="portfolio" className="bg-blue-100 mx-auto py-4 sm:px-12 md:px-36">
       <div className="text-center">
         <div className="container py-2 m-auto">
-          <h1 className="text-3xl mb-4 sm:mb-8 text-center font-medium">
+          <h1 className="text-3xl mb-4 sm:mb-8 text-center text-blue-700 font-medium">
             Check Out Some of My Works.
           </h1>
           <div
@@ -107,52 +107,42 @@ const Portfolio = () => {
           >
             {portfolio.map((item, i) => (
               <div key={Math.random()} className="my-2 px-2 img-container">
-                <h5 className="mb-4 text-2xl text-white font-medium">{item.name}</h5>
+                <h5 className="mb-4 text-xl text-blue-500">{item.name}</h5>
                 <div className="inline-block relative text-center">
                   <img
                     className="rounded h-32 w-60"
                     src={`${item.imgurl}`}
                     alt="my work"
                   />
-                  <div className="overlay absolute inset-0 grid grid-cols-2 px-1">
-                    {item.tools.map(tool =>
+                  <div className="overlay absolute inset-0 grid grid-cols-2 px-1 w-full h-100">
+                    <h6 className="flex justify-center align-center">
+                      <a target="_blank" rel="noopener noreferrer" href={item.githubUrl}>
+                        <GithubOutlined
+                          style={{ fontSize: "25px", margin: "10px" }}
+                          className="hover:text-blue-800"
+                        />
+                      </a>
+                      <a target="_blank" rel="noopener noreferrer" href={item.viewUrl}>
+                        <EyeOutlined
+                          style={{ fontSize: "25px", margin: "10px" }}
+                          className="hover:text-blue-800"
+                        />
+                      </a>
+                    </h6>
+                    {/* {item.tools.map(tool =>
                       <div key={Math.random()} className="flex justify-start items-center">
                         <div className="rounded-full h-2 w-2 bg-white mr-1" />
                         {tool}
                       </div>
-                    )}
+                    )} */}
                   </div>
                 </div>
-                <div className="details-button text-center mx-2 w-full">
+                {/* <div className="details-button text-center mx-2 w-full">
                   <button className="px-4 rounded-full mt-1 bg-blue-700 font-medium text-white-200">Preview</button>
                   <p>
                     {item.description}
                   </p>
-                </div>
-                <div className="">
-                  <h6 className="text-center">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      href={item.githubUrl}
-                    >
-                      <GithubOutlined
-                        style={{ fontSize: "25px", margin: "10px" }}
-                        className="hover:text-blue-800"
-                      />
-                    </a>
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      href={item.viewUrl}
-                    >
-                      <EyeOutlined
-                        style={{ fontSize: "25px", margin: "10px" }}
-                        className="hover:text-blue-800"
-                      />
-                    </a>
-                  </h6>
-                </div>
+                </div> */}
               </div>
             ))}
           </div>

@@ -26,7 +26,7 @@ html, body {
 }
 
 .media-nav {
-  visibility: visible;
+  display: flex;
 }
 
 .contact-input::placeholder {
