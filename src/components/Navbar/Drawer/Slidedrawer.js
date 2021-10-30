@@ -8,7 +8,7 @@ const SlideDrawer = (props) => {
   }
 
   return (
-    <div className={`${drawerClasses} bg-blue-800`}>
+    <div className={`${drawerClasses} bg-blue-600`}>
       <div className="flex flex-col py-2 mx-2">
         <div className="text-4xl text-left text-white font-medium mx-8 py-4">
           <a onClick={props.close} href="#">Waris</a>

@@ -41,7 +41,7 @@ const ContactUs = () => {
             </p>
           </div>
           <textarea
-            className="w-4/5 sm:w-3/5 lg:2/5 outline-none bg-blue-100 border-2 border-blue-400 contact-input h-24 rounded text-left px-2 py-4 my-4"
+            className="w-4/5 sm:w-3/5 lg:2/5 outline-none bg-blue-100 border-2 border-blue-300 contact-input h-24 rounded text-left px-2 py-4 my-4"
             onChange={messageHandler}
             placeholder="Message me now"
           />{" "}
