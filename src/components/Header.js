@@ -77,7 +77,7 @@ const Header = ({ color }) => {
           <h3 className="font-sans px-auto text-center text-coolGrey-200">
             <Typist cursor={{ show: false }} startDelay={2500}>
               <p className="border-b-1 border-blue-700 text-xl py-6">
-                I am a React Full-Stack Developer. I enjoy building
+                I am a React, Full-Stack Developer. I enjoy building
                 applications ranging from simple front-end apps to full-stack
                 apps with the help of some latest technologies.
               </p>

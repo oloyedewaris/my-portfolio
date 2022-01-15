@@ -17,7 +17,7 @@ const About = () => {
         <div className="w-full md:w-4/5 md:mx-2 container">
           <h2 className="text-2xl mt-4 font-medium text-blue-800">About Me</h2>
           <p className="py-4">
-            I am a 300 level student at Obafemi Awolowo University and
+            I am a 400 level student at Obafemi Awolowo University and
             pursuing my B.Sc in Computer Science from here. I am a self taught
             Full Stack Web Developer, diving deeper into Mobile
             Development. I believe that to be successful in life, one needs to
@@ -25,9 +25,9 @@ const About = () => {
           </p>
           <h2 className="text-2xl mt-4  font-medium text-blue-800">My Expertise</h2>
           <p className="py-4">
-            My expertise is front-end development,
-            Building scalable components, layouts, user interfaces animations and many more features as a React Developer.
-            I also have Back-end development skill and experience with Node JS, Express JS and MongoDB.
+            My expertise is front-end web development, I am specialized in
+            building scalable components, layouts, user interfaces animations and many more features as a React Developer.
+            I also have Back-end development skill and experience with Node.js and Express
           </p>
           <div className="py-auto inline-block text-left my-4">
             <a href={resume} download="Waris-resume.pdf">

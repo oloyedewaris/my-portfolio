@@ -5,6 +5,7 @@ import Todo from "../Utils/images/portfolio/todo.png";
 import Weatherlify from "../Utils/images/portfolio/weatherlify.png";
 import Chatlify from "../Utils/images/portfolio/chatlify.png";
 import ShoppGX from "../Utils/images/portfolio/shoppgx.png";
+import Goveera from "../Utils/images/portfolio/goveera.png";
 import { EyeOutlined, GithubOutlined } from "@ant-design/icons";
 
 const Portfolio = () => {
@@ -12,7 +13,8 @@ const Portfolio = () => {
     {
       name: "SocialHub",
       description:
-        "SocialHub is Web based social application users can share posts, likes and comments and also follow each other built with the mern stack.",
+        `SocialHub is Web based social application users can share posts, likes and comments and also follow 
+        each other built with the mern stack.`,
       tools: [
         "React",
         "Redux",
@@ -20,7 +22,7 @@ const Portfolio = () => {
         "Node.js",
         "MongoDB",
         "Express",
-        "CSS3"
+        "CSS"
       ],
       imgurl: SocialHub,
       githubUrl: "https://github.com/oloyedewaris/social-space",
@@ -29,7 +31,9 @@ const Portfolio = () => {
     {
       name: "ShoppGX",
       description:
-        "A Mern stack e-commerce application for selling laptops online. ShoppGX also includes features like user authentication, upload and deleting of products, order receipts, saved product, and also a live payment system which is just as sample",
+        `A Mern stack e-commerce application for selling laptops online. ShoppGX also includes features like user 
+        authentication, upload and deleting of products, order receipts, saved product, and also a live payment 
+        system which is just as sample`,
       tools: [
         "React-hooks",
         "Redux",
@@ -37,7 +41,7 @@ const Portfolio = () => {
         "Node.js",
         "MongoDB",
         "Express",
-        "CSS3"
+        "CSS"
       ],
       imgurl: ShoppGX,
       githubUrl: "https://github.com/oloyedewaris/shoppGX",
@@ -49,7 +53,7 @@ const Portfolio = () => {
         "Chatlify is a web chat application where users can join a chat room  and start live-messaging",
       tools: [
         "React-hooks",
-        "CSS3",
+        "CSS",
         "Node.js",
         "Express",
         "Socket.io"
@@ -63,7 +67,7 @@ const Portfolio = () => {
       description: "A Web calculator with simple and basic functionality",
       tools: [
         "React",
-        "CSS3"
+        "CSS"
       ],
       imgurl: Calculatify,
       githubUrl: "https://github.com/oloyedewaris/calculatify",
@@ -74,7 +78,7 @@ const Portfolio = () => {
       description: "A Simple todo list application for creating, deleting and editing todos",
       tools: [
         "React",
-        "CSS3"
+        "CSS"
       ],
       imgurl: Todo,
       githubUrl: "https://github.com/oloyedewaris/react-todo-app",
@@ -83,15 +87,33 @@ const Portfolio = () => {
     {
       name: "Weatherlify App",
       description:
-        "An application that shows weather information of user's entered location. Weatherlify uses open weather map api to fetch live weather information",
+        `An application that shows weather information of user's entered location. Weatherlify uses open 
+        weather map api to fetch live weather information`,
       tools: [
         "React-hooks",
         "Open-weather-map api",
-        "CSS3"
+        "CSS"
       ],
       imgurl: Weatherlify,
       githubUrl: "https://github.com/oloyedewaris/react-weather-app",
       viewUrl: "https://waris-weatherlify.netlify.app",
+    },
+    {
+      name: "Goveera",
+      description:
+        `A governance monitoring system for organizations.`,
+      tools: [
+        "React",
+        "Redux",
+        "Ant Design",
+        "Node.js",
+        "MongoDB",
+        "Express",
+        "CSS"
+      ],
+      imgurl: Goveera,
+      githubUrl: "https://github.com/oloyedewaris/",
+      viewUrl: "https://gov-tech.herokuapp.com",
     },
   ];
 
@@ -106,7 +128,7 @@ const Portfolio = () => {
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 mx-2 xs:mx-4 sm:mx-8 lg:mx-20 px-2"
           >
             {portfolio.map((item, i) => (
-              <div key={Math.random()} className="my-2 px-2 img-container">
+              <div key={i} className="my-2 px-2 img-container">
                 <h5 className="mb-4 text-xl text-blue-500">{item.name}</h5>
                 <div className="inline-block relative text-center">
                   <img
@@ -114,18 +136,12 @@ const Portfolio = () => {
                     src={`${item.imgurl}`}
                     alt="my work"
                   />
-                  <div className="flex justify-center items-center overlay absolute inset-0 grid grid-cols-2 px-1 w-full h-100">
-                    <a target="_blank" rel="noopener noreferrer" href={item.githubUrl}>
-                      <GithubOutlined
-                        style={{ fontSize: "25px", margin: "10px" }}
-                        className="hover:text-blue-800"
-                      />
+                  <div className="rounded flex justify-center items-center overlay absolute inset-0 grid grid-cols-2 px-1 w-full h-100">
+                    <a target="_blank" rel="noopener noreferrer" href={item.githubUrl} className='hover:text-blue-800 '>
+                      <GithubOutlined style={{ fontSize: "25px" }} />
                     </a>
-                    <a target="_blank" rel="noopener noreferrer" href={item.viewUrl}>
-                      <EyeOutlined
-                        style={{ fontSize: "25px", margin: "10px" }}
-                        className="hover:text-blue-800"
-                      />
+                    <a target="_blank" rel="noopener noreferrer" href={item.viewUrl} className='hover:text-blue-800 '>
+                      <EyeOutlined style={{ fontSize: "25px" }} />
                     </a>
                   </div>
                 </div>
@@ -133,8 +149,8 @@ const Portfolio = () => {
             ))}
           </div>
         </div>
-      </div>
-    </section>
+      </div >
+    </section >
   );
 };
 
