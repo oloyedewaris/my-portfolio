@@ -5,7 +5,7 @@ import resume from "../Utils/Waris_resume.pdf";
 
 const About = () => {
   return (
-    <section id="about" className="bg-blue-100 py-4 px-2">
+    <section id="about" className="py-4 px-2">
       <div className="block mx-4 md:m-2 lg:m-4 block md:flex sm:px-12 md:px-36">
         <div className="container w-full md:w-1/5 flex justify-center align-middle mx-auto py-auto">
           <img
@@ -31,7 +31,7 @@ const About = () => {
           </p>
           <div className="py-auto inline-block text-left my-4">
             <a href={resume} download="Waris-resume.pdf">
-              <button className="rounded-full flex justify-center items-center text-xl text-blue-900 font-medium px-4 py-2 border-2 border-blue-900 hover:bg-blue-900 hover:text-white sm:text-2l">
+              <button className="rounded-full flex justify-center items-center text-xl font-medium px-4 py-2 border-2 border-blue-800 bg-blue-800 hover:bg-white text-white hover:text-blue-800 sm:text-2l">
                 <DownloadOutlined style={{ fontSize: "22px", marginRight: "5px" }} />
                 Download resume
               </button>

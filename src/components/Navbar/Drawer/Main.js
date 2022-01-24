@@ -2,7 +2,7 @@ import React from "react";
 
 const Main = (props) => {
   return (
-    <div className="media-slider w-10 h-10 bg-blue-900" onClick={props.toggle}>
+    <div className="media-slider w-10 h-10 bg-blue-800" onClick={props.toggle}>
       {props.show ?
         <div
           className="text-5xl text-white"

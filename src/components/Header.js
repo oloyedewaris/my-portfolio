@@ -35,36 +35,31 @@ const Header = ({ color }) => {
       name: "twitter",
       url: "https://mobile.twitter.com/waris_oloyede",
       icon: <TwitterOutlined />,
-    },
-    {
-      name: "whatsapp",
-      url: "https://wa.me/2348108745769?text=Hello%20Waris",
-      icon: <WhatsAppOutlined />,
-    },
+    }
   ];
 
   return (
     <React.Fragment>
       <header id="waris" className="header-background flex justify-around flex-col">
-        <div className={`media-nav z-10 nav fixed left-0 top-0 right-0 flex justify-center ${color}`}>
-          <nav className="h-16 text-white flex py-3 mx-4 sm:w-2/4 justify-center md:w-3/4">
+        <div className={`z-10 hidden nav fixed left-0 top-0 right-0 md:flex justify-center ${color}`}>
+          <nav className="h-16 flex py-3 mx-4 sm:w-2/4 justify-center md:w-3/4">
             <a
               href="#"
-              className="text-center px-4 text-3xl sm:w-1/4 hover:text-blue-600 mx-auto"
+              className="text-center px-4 text-3xl sm:w-1/4 hover:text-blue-800 mx-auto"
             >
               Waris
             </a>
             <div className="w-3/4 m-auto mx-12 px-4 flex text-center">
-              <a href="#about" className="text-2xl mx-auto py-2 hover:text-blue-600 px-4 py-2 rounded">
+              <a href="#about" className="text-2xl mx-auto py-2 hover:text-blue-800 px-4 py-2 rounded">
                 About
               </a>
-              <a href="#resume" className="text-2xl mx-auto py-2 hover:text-blue-600 px-4 py-2 rounded">
+              <a href="#resume" className="text-2xl mx-auto py-2 hover:text-blue-800 px-4 py-2 rounded">
                 Resume
               </a>
-              <a href="#portfolio" className="text-2xl mx-auto py-2 hover:text-blue-600 px-4 py-2 rounded">
+              <a href="#portfolio" className="text-2xl mx-auto py-2 hover:text-blue-800 px-4 py-2 rounded">
                 Portfolio
               </a>
-              <a href="#contact" className="text-2xl mx-auto py-2 hover:text-blue-600 px-4 py-2 rounded">
+              <a href="#contact" className="text-2xl mx-auto py-2 hover:text-blue-800 px-4 py-2 rounded">
                 Contact
               </a>
             </div>
@@ -76,7 +71,7 @@ const Header = ({ color }) => {
           </div>
           <h3 className="font-sans px-auto text-center text-coolGrey-200">
             <Typist cursor={{ show: false }} startDelay={2500}>
-              <p className="border-b-1 border-blue-700 text-xl py-6">
+              <p className="border-b-1 border-blue-800 text-xl py-6">
                 I am a React, Full-Stack Developer. I enjoy building
                 applications ranging from simple front-end apps to full-stack
                 apps with the help of some latest technologies.
@@ -84,20 +79,20 @@ const Header = ({ color }) => {
             </Typist>
           </h3>
           <hr />
-          <div className="flex justify-center">
+          <p className="flex justify-center">
             {socialLinks.map((link) => (
-              <p className="text-center mx-2 my-4 py-2 sm:mx-4" key={link.name}>
+              <span className="text-center mx-2 sm:mx-4 my-4 py-2" key={link.name}>
                 <a
-                  className="text-3xl sm:text-4xl hover:text-blue-800"
+                  className="text-4xl sm:text-5xl hovertext-blue-800"
                   href={link.url}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   {link.icon}
                 </a>
-              </p>
+              </span>
             ))}
-          </div>
+          </p>
         </div>
       </header>
 
