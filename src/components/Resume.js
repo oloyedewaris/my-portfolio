@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { CloudSyncOutlined, LaptopOutlined, TeamOutlined, DownOutlined, UpOutlined, MobileOutlined } from "@ant-design/icons"
+import { LaptopOutlined, TeamOutlined, DownOutlined, UpOutlined, MobileOutlined } from "@ant-design/icons"
 
 const Resume = () => {
   const [isOpen, setOpen] = useState({
@@ -84,16 +84,16 @@ const Resume = () => {
       alias: 'devOps',
       skills: [
         {
+          skillname: "Git/Github/FireBase",
+          level: "60%"
+        },
+        {
           skillname: "WebSockets/REST/Socket.io",
-          level: "58%"
+          level: "48%"
         },
         {
           skillname: " MongoDB/Mongoose",
-          level: "72%"
-        },
-        {
-          skillname: "Git/Github/FireBase",
-          level: "60%"
+          level: "56%"
         },
       ]
     }
