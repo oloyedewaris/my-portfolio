@@ -98,8 +98,8 @@ const Portfolio = () => {
         "CSS"
       ],
       imgurl: Weatherlify,
-      githubUrl: "https://github.com/oloyedewaris/mybudget",
-      viewUrl: "https://play.google.com/store/apps/details?id=com.waris.mybudget",
+      githubUrl: "https://github.com/oloyedewaris/react-weather-app",
+      viewUrl: "https://waris-weatherlify.netlify.app/",
     },
     {
       name: "Goveera",
@@ -129,8 +129,8 @@ const Portfolio = () => {
         "Android",
       ],
       imgurl: MyBudget,
-      githubUrl: "https://github.com/oloyedewaris/",
-      viewUrl: "https://gov-tech.herokuapp.com",
+      githubUrl: "https://github.com/oloyedewaris/mybudget",
+      viewUrl: "https://play.google.com/store/apps/details?id=com.waris.mybudget",
     }
   ];
 
