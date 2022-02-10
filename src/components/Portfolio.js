@@ -139,7 +139,7 @@ const Portfolio = () => {
   }
 
   return (
-    <section id="portfolio" className="mx-auto py-4 sm:px-12 md:px-36 lg:px-60">
+    <section id="portfolio" className="mx-auto py-4 sm:px-12 md:px-32 lg:px-60">
       <div className="text-center">
         <div className="container py-2 m-auto">
           <h1 className="text-3xl mb-4 sm:mb-8 text-center text-blue-800 font-medium">
@@ -149,24 +149,25 @@ const Portfolio = () => {
             className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-2 justify-center items-center"
           >
             {portfolio.map((item, i) => (
-              <div key={i} className="my-2 px-2 img-container">
-                <h5 className="mb-4 text-xl text-blue-800">{item.name}</h5>
-                <div className="inline-block relative text-center">
-                  <img
-                    className="rounded h-32 w-48"
-                    src={`${item.imgurl}`}
-                    alt="my work"
-                  />
-                  <div className="rounded flex flex-col justify-around items-center overlay absolute inset-0 py-2 px-1 w-full h-full">
-                    <div className='flex w-full h-full justify-around items-center'>
-                      <a target="_blank" rel="noopener noreferrer" href={item.githubUrl} className='hover:text-blue-800 '>
-                        <GithubOutlined style={{ fontSize: 25 }} />
-                      </a>
-                      <a target="_blank" rel="noopener noreferrer" href={item.viewUrl} className='hover:text-blue-800 '>
-                        <EyeOutlined style={{ fontSize: 25 }} />
-                      </a>
-                    </div>
-                    <button className='w-2/5 self-center flex items-center justify-around' onClick={() => handleDetails(item)}>Details<ArrowRightOutlined /></button>
+              <div key={i} className="m-4 w-48 mx-auto px-2 img-container" style={{ maxWidth: '20rem' }}>
+                <h1 className="mb-2 text-lg text-blue-800">{item.name}</h1>
+                <img
+                  className="rounded h-32 w-full"
+                  src={`${item.imgurl}`}
+                  alt="my work"
+                />
+                <div className="flex my-2 justify-between items-center">
+                  <button className='flex-row flex items-center px-2 py-1 border-2 border-blue-600 bg-blue-600 hover:bg-white text-white hover:text-blue-600 rounded'
+                    onClick={() => handleDetails(item)}>
+                    Details<ArrowRightOutlined style={{ marginLeft: 5 }} />
+                  </button>
+                  <div >
+                    <a target="_blank" rel="noopener noreferrer" href={item.githubUrl} className='hover:text-blue-800'>
+                      <GithubOutlined style={{ fontSize: 20 }} />
+                    </a>
+                    <a target="_blank" rel="noopener noreferrer" href={item.viewUrl} className='mx-2 hover:text-blue-800'>
+                      <EyeOutlined style={{ fontSize: 20 }} />
+                    </a>
                   </div>
                 </div>
               </div>
