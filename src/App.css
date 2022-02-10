@@ -62,7 +62,7 @@ html, body {
 .img {
   transition: transform .2s;
 }
-img:hover {
+.img:hover {
   transform: scale(1.1);
 }
 .skills_transition {

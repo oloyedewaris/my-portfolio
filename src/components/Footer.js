@@ -9,8 +9,8 @@ const Footer = () => {
           <UpCircleOutlined />
         </a>
       </p>
-      <p className="text-center mx-4 text-xl">Proudly handcrafted by Me from scratch</p>
-      <p className="text-center text-xl">&copy; Copyright 2021</p>
+      <p className="text-center mx-4 text-xl">Proudly handcrafted by Waris Oloyede</p>
+      <p className="text-center text-xl">&copy; Copyright {new Date().getFullYear()}</p>
     </footer>
   );
 };
