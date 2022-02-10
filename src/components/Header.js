@@ -73,7 +73,7 @@ const Header = ({ color }) => {
             <Typist cursor={{ show: false }} startDelay={2500}>
               <p className="border-b-1 border-blue-800 text-xl py-6">
                 React, Full-Stack Developer. I enjoy building
-                applications ranging from simple front-end apps to full-stack
+                applications ranging from simple front-end and mobile apps to full-stack
                 apps with the help of some latest technologies.
               </p>
             </Typist>

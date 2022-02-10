@@ -145,7 +145,7 @@ const Resume = () => {
                 <div>{category.skills.map((item, i) => (
                   <>
                     {isOpen[category.alias] ?
-                      <div className='skills_transition mx-auto text-left py-2' key={Math.random()}>
+                      <div className='skills_transition h-full mx-auto text-left py-2' key={Math.random()}>
                         <div className="h-6 relative">
                           <div className="absolute font-medium left-0">
                             {item.skillname}

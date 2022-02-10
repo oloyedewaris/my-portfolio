@@ -13,7 +13,7 @@ const App = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.pageYOffset > window.innerHeight) {
+      if (window.pageYOffset > window.innerHeight - 10) {
         setColor("bg-white text-blue-800 media-nav")
       } else {
         setColor("text-white")

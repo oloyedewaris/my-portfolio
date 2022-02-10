@@ -146,13 +146,13 @@ const Portfolio = () => {
             Check Out Some of My Works.
           </h1>
           <div
-            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-2 justify-center items-center"
+            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 justify-center items-center"
           >
             {portfolio.map((item, i) => (
-              <div key={i} className="m-4 w-48 mx-auto px-2 img-container" style={{ maxWidth: '20rem' }}>
-                <h1 className="mb-2 text-lg text-blue-800">{item.name}</h1>
+              <div key={i} className="m-4 w-48 mx-auto px-2 " style={{ maxWidth: '20rem' }}>
+                <h1 className="mb-2 text-lg font-medium text-blue-800">{item.name}</h1>
                 <img
-                  className="rounded h-32 w-full"
+                  className="img rounded h-32 w-full"
                   src={`${item.imgurl}`}
                   alt="my work"
                 />

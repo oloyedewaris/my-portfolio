@@ -59,19 +59,38 @@ html, body {
   }
 }
 
-.img-container {
-  box-shadow: 5px rgba(0, 0, 0, 0.1);
+.img {
+  transition: transform .2s;
+}
+img:hover {
+  transform: scale(1.1);
+}
+.skills_transition {
+  animation: skill .5s;
+  transform: translate(0%);
+}
+@keyframes skill {
+  from {
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+  }
 }
 
 .modal {
   position: fixed;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.3);
   width: 100%;
   height: 100%;
+  z-index: 90;
 }
 .modal_main {
+  z-index: 100;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -82,6 +101,20 @@ html, body {
   transform: translate(-50%, -50%);
   padding: 15px 25px;
   border-radius: 10px;
+  opacity: 1;
+  animation: show .5s;
+}
+@keyframes show {
+  from {
+    transform: translate(50%, 50%);
+    opacity: 0;
+    z-index: -1;
+  }
+  to {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    z-index: 100;
+  }
 }
 
 /* media queries */
