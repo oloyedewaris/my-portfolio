@@ -59,11 +59,18 @@ html, body {
   }
 }
 
-.img {
+.img_zoom {
   transition: transform .2s;
 }
-.img:hover {
+.img_zoom:hover, .img_zoom:active {
   transform: scale(1.1);
+}
+.img_overlay {
+  opacity: 0;
+  background: black;
+}
+.img_overlay:hover {
+  opacity: 0.7
 }
 .skills_transition {
   animation: skill .5s;

@@ -15,6 +15,37 @@ const Portfolio = () => {
 
   const portfolio = [
     {
+      name: "Goveera",
+      description:
+        `A robust governance monitoring system for organizations. Built as a startup project at AfricaHacks hackathon`,
+      tools: [
+        "React",
+        "Redux",
+        "Ant Design",
+        "Node.js",
+        "MongoDB",
+        "Express",
+        "CSS"
+      ],
+      imgurl: Goveera,
+      githubUrl: "https://github.com/oloyedewaris/",
+      viewUrl: "https://gov-tech.herokuapp.com",
+    },
+    {
+      name: "MyBudget",
+      description:
+        `MyBudget is a mobile application for managing budgets and tracking expenses`,
+      tools: [
+        "React",
+        "React Native",
+        "React navigation",
+        "Android",
+      ],
+      imgurl: MyBudget,
+      githubUrl: "https://github.com/oloyedewaris/mybudget",
+      viewUrl: "https://play.google.com/store/apps/details?id=com.waris.mybudget",
+    },
+    {
       name: "SocialHub",
       description:
         `SocialHub is Web based social application users can share posts, likes and comments and also follow 
@@ -101,37 +132,6 @@ const Portfolio = () => {
       githubUrl: "https://github.com/oloyedewaris/react-weather-app",
       viewUrl: "https://waris-weatherlify.netlify.app/",
     },
-    {
-      name: "Goveera",
-      description:
-        `A governance monitoring system for organizations. Built as a startup project at AfricaHacks hackathon`,
-      tools: [
-        "React",
-        "Redux",
-        "Ant Design",
-        "Node.js",
-        "MongoDB",
-        "Express",
-        "CSS"
-      ],
-      imgurl: Goveera,
-      githubUrl: "https://github.com/oloyedewaris/",
-      viewUrl: "https://gov-tech.herokuapp.com",
-    },
-    {
-      name: "MyBudget",
-      description:
-        `MyBudget is a mobile application for managing budgets and tracking expenses`,
-      tools: [
-        "React",
-        "React Native",
-        "React navigation",
-        "Android",
-      ],
-      imgurl: MyBudget,
-      githubUrl: "https://github.com/oloyedewaris/mybudget",
-      viewUrl: "https://play.google.com/store/apps/details?id=com.waris.mybudget",
-    }
   ];
 
   const handleDetails = (item) => {
@@ -139,35 +139,37 @@ const Portfolio = () => {
   }
 
   return (
-    <section id="portfolio" className="mx-auto py-4 sm:px-12 md:px-32 lg:px-60">
+    <section id="portfolio" className="mx-auto py-4 sm:px-12 lg:px-32 xl:px-60">
       <div className="text-center">
         <div className="container py-2 m-auto">
           <h1 className="text-3xl mb-4 sm:mb-8 text-center text-blue-800 font-medium">
             Check Out Some of My Works.
           </h1>
           <div
-            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 justify-center items-center"
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 justify-center items-center"
           >
             {portfolio.map((item, i) => (
-              <div key={i} className="m-4 w-48 mx-auto px-2 " style={{ maxWidth: '20rem' }}>
+              <div key={i} className="m-4 w-full mx-auto px-2 " style={{ maxWidth: '20rem' }}>
                 <h1 className="mb-2 text-lg font-medium text-blue-800">{item.name}</h1>
-                <img
-                  className="img rounded h-32 w-full"
-                  src={`${item.imgurl}`}
-                  alt="my work"
-                />
-                <div className="flex my-2 justify-between items-center">
-                  <button className='flex-row flex items-center px-2 py-1 border-2 border-blue-600 bg-blue-600 hover:bg-white text-white hover:text-blue-600 rounded'
-                    onClick={() => handleDetails(item)}>
-                    Details<ArrowRightOutlined style={{ marginLeft: 5 }} />
-                  </button>
-                  <div >
-                    <a target="_blank" rel="noopener noreferrer" href={item.githubUrl} className='hover:text-blue-800'>
-                      <GithubOutlined style={{ fontSize: 20 }} />
-                    </a>
-                    <a target="_blank" rel="noopener noreferrer" href={item.viewUrl} className='mx-2 hover:text-blue-800'>
-                      <EyeOutlined style={{ fontSize: 20 }} />
-                    </a>
+                <div className='relative img_zoom h-44 w-full'>
+                  <img
+                    className="h-full w-full rounded"
+                    src={`${item.imgurl}`}
+                    alt="my work"
+                  />
+                  <div className="img_overlay h-full w-full rounded px-4 py-2 flex justify-between items-end absolute text-white inset-0">
+                    <button className='flex-row flex items-center hover:text-blue-800'
+                      onClick={() => handleDetails(item)}>
+                      Details<ArrowRightOutlined style={{ marginLeft: 5 }} />
+                    </button>
+                    <div >
+                      <a target="_blank" rel="noopener noreferrer" href={item.githubUrl} className='ml-4 hover:text-blue-800'>
+                        <GithubOutlined style={{ fontSize: 20 }} />
+                      </a>
+                      <a target="_blank" rel="noopener noreferrer" href={item.viewUrl} className='ml-4 hover:text-blue-800'>
+                        <EyeOutlined style={{ fontSize: 20 }} />
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
