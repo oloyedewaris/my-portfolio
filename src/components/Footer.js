@@ -3,9 +3,9 @@ import { UpCircleOutlined } from "@ant-design/icons";
 
 const Footer = () => {
   return (
-    <footer id="footer" className="bg-blue-800 text-white py-6">
+    <footer id="footer" className="bg-purple-800 text-white py-6">
       <p className="w-full mx-auto text-center my-2">
-        <a className="font-bold text-5xl hover:text-blue-200" href="#">
+        <a className="font-bold text-5xl hover:text-purple-200" href="#">
           <UpCircleOutlined />
         </a>
       </p>

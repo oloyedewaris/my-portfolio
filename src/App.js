@@ -14,7 +14,7 @@ const App = () => {
   useEffect(() => {
     const handleScroll = () => {
       if (window.pageYOffset > window.innerHeight - 10) {
-        setColor("bg-white text-blue-800 media-nav")
+        setColor("bg-white text-purple-800 media-nav")
       } else {
         setColor("text-white")
       }
@@ -26,7 +26,7 @@ const App = () => {
   }, [])
 
   return (
-    <div className='text-gray-700'>
+    <div className='text-gray-700 mx-auto'>
       <Header color={color} />
       <Slider />
       <About />

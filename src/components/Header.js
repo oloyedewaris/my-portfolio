@@ -50,32 +50,39 @@ const Header = ({ color }) => {
               Waris
             </a>
             <div className="w-3/4 m-auto mx-12 px-4 flex text-center">
-              <a href="#about" className="text-2xl mx-auto py-2 hover:text-blue-800 px-4 py-2 rounded">
+              <a href="#about" className="text-2xl mx-auto hover:text-blue-800 px-4 py-2 rounded">
                 About
               </a>
-              <a href="#resume" className="text-2xl mx-auto py-2 hover:text-blue-800 px-4 py-2 rounded">
+              <a href="#resume" className="text-2xl mx-auto hover:text-blue-800 px-4 py-2 rounded">
                 Resume
               </a>
-              <a href="#portfolio" className="text-2xl mx-auto py-2 hover:text-blue-800 px-4 py-2 rounded">
+              <a href="#portfolio" className="text-2xl mx-auto hover:text-blue-800 px-4 py-2 rounded">
                 Portfolio
               </a>
-              <a href="#contact" className="text-2xl mx-auto py-2 hover:text-blue-800 px-4 py-2 rounded">
+              <a href="#contact" className="text-2xl mx-auto hover:text-blue-800 px-4 py-2 rounded">
                 Contact
               </a>
             </div>
           </nav>
         </div>
-        <div className="inline-block flex justify-center items-center flex-col h-full text-center md:pt-10 mx-2 xs:mx-auto xs:w-5/6 lg:w-3/5 md:4/6">
-          <div className="text-5xl sm:text-6xl  mx-auto my-2">
+        <div className="flex justify-center items-center flex-col h-full text-center md:pt-10 mx-auto xs:w-5/6 lg:w-3/5 md:4/6">
+          <div className="text-7xl sm:text-8xl  mx-auto my-2">
             WARIS OLOYEDE
           </div>
-          <h3 className="font-sans px-auto text-center text-coolGrey-200">
-            <Typist cursor={{ show: false }} startDelay={2500}>
-              <p className="border-b-1 border-blue-800 text-xl py-6">
-                React, Full-Stack Developer. I enjoy building
-                applications ranging from simple front-end and mobile apps to full-stack
-                apps with the help of some latest technologies.
-              </p>
+          <h3 className="font-sans text-center text-coolGrey-200">
+            <Typist avgTypingDelay={50} cursor={{ show: false }} startDelay={2500}>
+              <p className="px-2 text-xl py-6">Hello, I am  WARIS OLOYEDE. I am a</p>
+              <span className="text-purple-700 text-3xl">Software Developer</span>
+              <Typist.Backspace count={18} delay={1000} />
+              <span className="text-purple-700 text-3xl">JavaScript Developer</span>
+              <Typist.Backspace count={20} delay={1000} />
+              <span className="text-purple-700 text-3xl">React Developer</span>
+              <Typist.Backspace count={15} delay={1000} />
+              <span className="text-purple-700 text-3xl">React Native Developer</span>
+              <Typist.Backspace count={22} delay={1000} />
+              <span className="text-purple-700 text-3xl">Node.JS Developer</span>
+              <Typist.Backspace count={17} delay={1000} />
+              <span className="text-purple-700 text-3xl">Next.JS Developer</span>
             </Typist>
           </h3>
           <hr />
@@ -95,7 +102,6 @@ const Header = ({ color }) => {
           </p>
         </div>
       </header>
-
     </React.Fragment>
   );
 };
