@@ -90,7 +90,7 @@ const Portfolio = () => {
                     src={`${item.imgurl}`}
                     alt="my work"
                   />
-                  <div className="hover:opacity-70 opacity-0 bg-black h-full w-full px-6 py-4 flex flex-col justify-between items-between absolute text-white inset-0">
+                  <div className="shadow bg-black h-full w-full px-6 py-4 flex flex-col justify-between items-between absolute text-white inset-0">
                     <p className="font-semibold">{item.description}</p>
                     <div className="flex flex-row justify-between items-center">
                       <a target="_blank" rel="noopener noreferrer" href={item.githubUrl} className='ml-4 hover:text-purple-800'>

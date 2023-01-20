@@ -56,8 +56,17 @@ body {
   max-height: 400px;
 }
 
+.shadow {
+  opacity: 0;
+  transition: opacity .6s;
+}
+
+.shadow:hover {
+  opacity: 0.7
+}
+
 .img_zoom {
-  transition: transform .8s;
+  transition: transform .6s;
 }
 
 .img_zoom:hover,
