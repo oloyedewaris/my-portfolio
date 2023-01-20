@@ -30,7 +30,7 @@ const About = () => {
             </p>
             <div className="py-auto inline-block text-left my-4">
               <a href={resume} download="Waris-resume.pdf">
-                <button className="rounded-full flex justify-center items-center text-xl font-medium px-4 py-2 border-2 border-purple-800 bg-purple-800 hover:bg-white text-white hover:text-purple-800 sm:text-2l">
+                <button className="hover:transition-colors rounded-full flex justify-center items-center text-xl font-medium px-4 py-2 border-2 border-purple-800 bg-purple-800 hover:bg-white text-white hover:text-purple-800 sm:text-2l">
                   <DownloadOutlined style={{ fontSize: "22px", marginRight: "5px" }} />
                   Download resume
                 </button>

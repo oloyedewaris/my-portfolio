@@ -19,6 +19,15 @@ const Portfolio = () => {
       imgurl: Goveera,
       githubUrl: "https://github.com/oloyedewaris/",
       viewUrl: "https://gov-tech.herokuapp.com",
+      tools: [
+        "React",
+        "Redux",
+        "Ant Design",
+        "Node.js",
+        "MongoDB",
+        "Express",
+        "CSS"
+      ],
     },
     {
       name: "MyBudget",
@@ -26,6 +35,13 @@ const Portfolio = () => {
       imgurl: MyBudget,
       githubUrl: "https://github.com/oloyedewaris/mybudget",
       viewUrl: "https://play.google.com/store/apps/details?id=com.waris.mybudget",
+      tools: [
+        "React",
+        "React Native",
+        "React Navigation",
+        "Android",
+        "iOS"
+      ],
     },
     {
       name: "SocialHub",
@@ -33,6 +49,15 @@ const Portfolio = () => {
       imgurl: SocialHub,
       githubUrl: "https://github.com/oloyedewaris/social-space",
       viewUrl: "https://waris-social-app.herokuapp.com",
+      tools: [
+        "React",
+        "Redux",
+        "Ant Design",
+        "Node.js",
+        "MongoDB",
+        "Express",
+        "CSS"
+      ],
     },
     {
       name: "ShoppGX",
@@ -40,6 +65,15 @@ const Portfolio = () => {
       imgurl: ShoppGX,
       githubUrl: "https://github.com/oloyedewaris/shoppGX",
       viewUrl: "https://shoppgx.herokuapp.com/",
+      tools: [
+        "React-hooks",
+        "Redux",
+        "Ant design",
+        "Node.js",
+        "MongoDB",
+        "Express",
+        "CSS"
+      ],
     },
     {
       name: "Chatlify Web",
@@ -47,13 +81,25 @@ const Portfolio = () => {
       imgurl: Chatlify,
       githubUrl: "https://github.com/oloyedewaris/chatlify-client",
       viewUrl: "https://waris-chatlify.netlify.app",
+      tools: [
+        "React-hooks",
+        "CSS",
+        "Node.js",
+        "Express",
+        "Socket.io"
+      ],
     },
     {
-      name: "Calculatify",
+      name: "Web Calculator",
       description: "A Web calculator with simple and basic functionality",
       imgurl: Calculatify,
       githubUrl: "https://github.com/oloyedewaris/calculatify",
       viewUrl: "https://calculatify.netlify.app/",
+      tools: [
+        "JavaScript",
+        "React",
+        "CSS"
+      ],
     },
     {
       name: "Todo List",
@@ -61,6 +107,11 @@ const Portfolio = () => {
       imgurl: Todo,
       githubUrl: "https://github.com/oloyedewaris/react-todo-app",
       viewUrl: "https://waris-todolist.netlify.app",
+      tools: [
+        "React",
+        "CSS",
+        "LESS"
+      ],
     },
     {
       name: "Weatherlify App",
@@ -68,6 +119,13 @@ const Portfolio = () => {
       imgurl: Weatherlify,
       githubUrl: "https://github.com/oloyedewaris/react-weather-app",
       viewUrl: "https://waris-weatherlify.netlify.app/",
+      tools: [
+        "JavaScript",
+        "React-hooks",
+        "React",
+        "Open-weather-map api",
+        "CSS"
+      ],
     },
   ];
 
@@ -92,6 +150,11 @@ const Portfolio = () => {
                   />
                   <div className="shadow bg-black h-full w-full px-6 py-4 flex flex-col justify-between items-between absolute text-white inset-0">
                     <p className="font-semibold">{item.description}</p>
+                    <ul className="grid grid-cols-2 gap-x-5">
+                      {item.tools.map(tool => (
+                        <li className="text-xs" key={i}>{tool}</li>
+                      ))}
+                    </ul>
                     <div className="flex flex-row justify-between items-center">
                       <a target="_blank" rel="noopener noreferrer" href={item.githubUrl} className='ml-4 hover:text-purple-800'>
                         <GithubOutlined style={{ fontSize: 25 }} />

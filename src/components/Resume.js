@@ -7,16 +7,20 @@ const Resume = () => {
   const categoriesData = [
     {
       id: 1,
-      name: "Frameworks/Languages",
+      name: "Languages/Frameworks",
       alias: 'frame',
       isOpen: false,
       skills: [
         {
           skillname: "JavaScript (ES6+)",
+          level: "90%",
+        },
+        {
+          skillname: " ReactJS",
           level: "87%",
         },
         {
-          skillname: " ReactJS/React Native",
+          skillname: " React Native",
           level: "92%",
         },
         {
@@ -24,36 +28,40 @@ const Resume = () => {
           level: "68%",
         },
         {
-          skillname: "HTML5/CSS3",
+          skillname: "HTML/CSS",
           level: "78%",
         },
         {
-          skillname: " NodeJS/ExpressJS",
+          skillname: " Node.js/Express.js/MongoDB",
           level: "58%",
         }
       ]
     },
     {
       id: 2,
-      name: "UI Libraries/Tools",
+      name: "UI Libraries",
       alias: 'ui',
       isOpen: false,
       skills: [
         {
-          skillname: "Bootstrap/Material UI",
+          skillname: "Bootstrap",
           level: "75%"
         },
         {
-          skillname: "Redux/React-router/Formik",
+          skillname: "Material UI",
+          level: "55%"
+        },
+        {
+          skillname: "Ant Design",
+          level: "70%"
+        },
+        {
+          skillname: "Redux",
           level: "69%"
         },
         {
           skillname: "React navigation",
           level: "77%"
-        },
-        {
-          skillname: "Axios/Bcrypt/Json web tokens",
-          level: "75%"
         },
       ]
     },
@@ -64,16 +72,20 @@ const Resume = () => {
       isOpen: false,
       skills: [
         {
-          skillname: "Git/Github/FireBase",
+          skillname: "Git/Github",
           level: "60%"
         },
         {
-          skillname: "WebSockets/REST/Socket.io",
+          skillname: "FireBase",
+          level: "58%"
+        },
+        {
+          skillname: "AWS Amplify",
           level: "48%"
         },
         {
-          skillname: " MongoDB/Mongoose",
-          level: "56%"
+          skillname: "WebSockets/REST/Socket.io",
+          level: "42%"
         },
       ]
     }
