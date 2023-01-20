@@ -52,6 +52,10 @@ const Resume = () => {
           level: "55%"
         },
         {
+          skillname: "Tailwind CSS",
+          level: "95%"
+        },
+        {
           skillname: "Ant Design",
           level: "70%"
         },
