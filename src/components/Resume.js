@@ -24,8 +24,8 @@ const Resume = () => {
           level: "68%",
         },
         {
-          skillname: "HTML5/CSS3/LESS",
-          level: "67%",
+          skillname: "HTML5/CSS3",
+          level: "78%",
         },
         {
           skillname: " NodeJS/ExpressJS",
@@ -112,17 +112,17 @@ const Resume = () => {
   return (
     <section id="resume" className="py-4 mx-auto sm:px-10 md:px-28 lg:px-32 xl:px-40">
       <div className="mx-2 sm:mx-4 md:mx-12 sm:w-5/6 text-center block py-4 sm:py-8 sm:flex sm:justify-center">
-        <Fade left>
+        <Fade duration={2500} left>
           <div className="sm:w-1/4 sm:text-left mb-4 inline-block text-center">
-            <p className="text-purple-800 text-center text-4xl font-medium underline">
+            <p className="text-purple-800 text-center text-3xl md:text-4xl font-medium underline">
               What I Do
             </p>
           </div>
         </Fade>
         <div className=" flex sm:w-4/5 flex-col justify-center text-center sm:text-left px-2 sm:px-4">
           {works.map((work, i) => (
-            <Fade right key={i}>
-              <div className="block p-4 xs:p-8 my-4 shadow-2xl rounded-xl">
+            <Fade duration={2000} right key={i}>
+              <div className="block p-4 xs:p-8 my-4 shadow-xl hover:shadow-2xl rounded-xl">
                 <div className="text-3xl text-purple-800 my-2">{work.icon}</div>
                 <h3 className="text-2xl font-medium my-2">{work.service}</h3>
                 <p className="">{work.specialization}</p>
@@ -132,9 +132,9 @@ const Resume = () => {
         </div>
       </div>
       <div className="mx-2 sm:mx-4 md:mx-12 sm:w-5/6 text-center block py-4 sm:py-8 sm:flex sm:justify-center">
-        <Fade left>
+        <Fade duration={2500} left>
           <div className="sm:w-1/4 sm:text-left mb-4 inline-block text-center">
-            <p className="text-purple-800 text-center text-4xl font-medium underline">
+            <p className="text-purple-800 text-center text-3xl md:text-4xl font-medium underline">
               Skill Set
             </p>
           </div>
@@ -142,7 +142,7 @@ const Resume = () => {
         <div className="px-2 sm:px-8 sm:w-4/5 mx-auto py-auto">
           <div className="my-2">
             {categoriesData.map((category, i) => (
-              <Zoom key={i} left>
+              <Zoom duration={2000} key={i} left>
                 <div className="skill_transition overflow-hidden mb-6 w-full px-4 py-3 rounded-lg ring-1 ring-purple-600">
                   <div className="cursor-pointer my-4 text-purple-800 w-full flex justify-between items-center mx-auto">
                     <span className='text-xl font-medium'>{category.name}</span>

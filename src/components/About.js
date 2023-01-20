@@ -17,9 +17,9 @@ const About = () => {
             />
           </div>
         </Fade>
-        <Fade right>
-          <div className="w-full md:w-4/5 md:mx-2 container">
-            <h2 className="text-6xl mt-4 font-medium">About <span className="text-purple-800">Me</span></h2>
+        <Fade duration={2500} right>
+          <div className=" px-4 w-full md:w-4/5 md:mx-2 container">
+            <h2 className="text-4xl md:text-6xl mt-4 font-medium">About <span className="text-purple-800">Me</span></h2>
             <p className="py-4 text-lg">
               I am an enthusiastic and highly competent self-motivated software
               developer with robust understand of software project lifecycle.

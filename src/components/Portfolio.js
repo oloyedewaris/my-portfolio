@@ -9,7 +9,7 @@ import Goveera from "../assets/images/portfolio/goveera.png";
 import MyBudget from "../assets/images/portfolio/mybudget.png";
 import { EyeOutlined, GithubOutlined } from "@ant-design/icons";
 import Fade from "react-reveal/Fade";
-import Roll from "react-reveal/Roll";
+import Zoom from "react-reveal/Zoom";
 
 const Portfolio = () => {
   const portfolio = [
@@ -75,21 +75,22 @@ const Portfolio = () => {
   return (
     <section id="portfolio" className="mx-auto py-4 px-8 w-full sm:w-4/5">
       <div className="container py-2 m-auto">
-        <h1 className="text-6xl mb-4 sm:mb-8 text-center font-medium flex flex-row justify-center items-center">
-          <Fade left>Recent </Fade> <Fade right> <span className='text-purple-800'> Works</span></Fade>
+        <h1 className="text-4xl md:text-5xl mb-4 sm:mb-8 text-center font-medium flex flex-row justify-center items-center">
+          <Fade duration={2500} left>Recent{" "}</Fade>
+          <Fade duration={2500} right> <span className='text-purple-800'> Works</span></Fade>
         </h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-5 justify-center items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-5 justify-center items-center">
           {portfolio.map((item, i) => (
-            <Roll left>
-              <div key={i} className="m-4 w-full mx-auto px-2" style={{ maxWidth: '20rem' }}>
+            <Zoom duration={3000} key={i}>
+              <div key={i} className="m-4 w-full mx-auto px-2">
                 <h1 className="mb-2 text-lg font-medium text-purple-800">{item.name}</h1>
-                <div className='relative img_zoom h-48 w-full'>
+                <div className='relative h-64 w-full img_zoom '>
                   <img
                     className="h-full w-full"
                     src={`${item.imgurl}`}
                     alt="my work"
                   />
-                  <div className="opacity-0 bg-black hover:opacity-80 h-full w-full px-6 py-4 flex flex-col justify-between items-between absolute text-white inset-0">
+                  <div className="hover:opacity-70 opacity-0 bg-black h-full w-full px-6 py-4 flex flex-col justify-between items-between absolute text-white inset-0">
                     <p className="font-semibold">{item.description}</p>
                     <div className="flex flex-row justify-between items-center">
                       <a target="_blank" rel="noopener noreferrer" href={item.githubUrl} className='ml-4 hover:text-purple-800'>
@@ -102,7 +103,7 @@ const Portfolio = () => {
                   </div>
                 </div>
               </div>
-            </Roll>
+            </Zoom>
           ))}
         </div>
       </div>
