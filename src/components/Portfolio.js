@@ -144,7 +144,7 @@ const Portfolio = () => {
                 <h1 className="mb-2 text-lg font-medium text-purple-800">{item.name}</h1>
                 <div className='relative h-64 w-full img_zoom '>
                   <img
-                    className="h-full w-full"
+                    className="object-cover object-center h-full w-full"
                     src={`${item.imgurl}`}
                     alt="my work"
                   />

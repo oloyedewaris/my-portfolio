@@ -7,38 +7,7 @@ import {
   GithubOutlined,
   WhatsAppOutlined,
 } from "@ant-design/icons";
-import Typist from "react-typist";
 import { Typewriter } from "react-simple-typewriter";
-
-const TypistLoop = ({ interval = 1000, children }) => {
-  const [currentIndex, setCurrentIndex] = React.useState(0);
-  const [mounted, setMounted] = React.useState(false);
-  const [timer, setTimer] = React.useState();
-
-  React.useEffect(() => {
-    setMounted(true);
-    return () => {
-      setMounted(false);
-      if (timer) clearTimeout(timer);
-    };
-  }, []);
-
-  const showNext = () => {
-    if (!mounted) return;
-    setCurrentIndex((currentIndex + 1) % React.Children.count(children));
-  };
-
-  const onTypingDone = React.useCallback(() => {
-    setTimer(setTimeout(showNext, interval));
-  }, []);
-
-  return React.Children.map(
-    children,
-    (child, i) =>
-      i === currentIndex &&
-      React.cloneElement(child, { onTypingDone }),
-  );
-};
 
 const Header = ({ color }) => {
   const socialLinks = [
