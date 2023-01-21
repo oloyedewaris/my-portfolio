@@ -1,7 +1,7 @@
 import React from "react";
 import { DownloadOutlined } from "@ant-design/icons";
 import ProfileImg from "../assets/images/profilepic.jpg";
-import resume from "../assets/Waris_resume.pdf";
+import resume from "../assets/Waris_Oloyede.pdf";
 import Fade from 'react-reveal/Fade';
 
 const About = () => {
