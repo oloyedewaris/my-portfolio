@@ -21,12 +21,14 @@ const About = () => {
           <div className=" px-4 w-full md:w-4/5 md:mx-2 container">
             <h2 className="text-4xl md:text-6xl mt-4 font-medium">About <span className="text-purple-800">Me</span></h2>
             <p className="py-4 text-lg">
-              I am an enthusiastic and highly competent self-motivated software
-              developer with robust understand of software project lifecycle.
-              I have strong technical skills as well as excellent interpersonal skills,
-              enabling me to interact with a wide range of teams and individuals.
-              I believe that to be successful in life, one needs to
-              be obsessive with their dreams and keep working towards them.
+              I am a passionate and highly skilled software engineer with over four years of experience specializing in 
+              a wide range of technologies, including React, React Native, and Node.js. My robust understanding of the 
+              software project lifecycle, from initial planning and design to deployment and maintenance, has equipped
+              me with the ability to deliver high-quality solutions efficiently. My technical proficiency is 
+             complemented by excellent interpersonal skills, enabling seamless collaboration with cross-functiona
+              teams and effective communication with stakeholders. I thrive in dynamic environments, continually
+             seeking opportunities to learn and grow. Driven by an unwavering commitment to excellence, I
+            believe that success is achieved through relentless dedication to one's dreams and persistent effort toward their realization.
             </p>
             <div className="py-auto inline-block text-left my-4">
               <a href={resume} download="Waris-resume.pdf">
