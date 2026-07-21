@@ -1,0 +1,55 @@
+@import './mixins.module.scss';
+
+.verticalContainer {
+  display: none;
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 4rem;
+    position: fixed;
+    bottom: 0rem;
+    right: 2rem;
+  }
+  @include laptop {
+    right: 4rem;
+  }
+  z-index: 10;
+  color: var(--light-slate);
+  .emailWrapper {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    a {
+      margin: 20px auto;
+      padding: 10px;
+      font-family: var(--font-mono);
+      font-size: var(--fz-xxs);
+      line-height: var(--fz-lg);
+      letter-spacing: 0.1em;
+      -webkit-writing-mode: vertical-rl;
+      writing-mode: vertical-rl;
+      display: inline-block;
+      text-decoration: none;
+      text-decoration-skip-ink: auto;
+      color: inherit;
+      position: relative;
+      transition: var(--transition);
+    }
+    a:hover,
+    a:focus {
+      color: var(--green);
+      transform: translateY(-0.3rem);
+    }
+    &::after {
+      content: '';
+      display: block;
+      width: 1px;
+      height: 90px;
+      margin: 0px auto;
+      background-color: var(--light-slate);
+    }
+  }
+}

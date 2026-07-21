@@ -1,0 +1,161 @@
+@import './mixins.module.scss';
+
+.mobileOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  backdrop-filter: blur(0rem);
+  transition: 0.3s;
+  z-index: 10;
+  @include tablet {
+    display: none;
+  }
+}
+.mobileOverlay.openOverlay {
+  backdrop-filter: blur(0.3rem);
+}
+
+.navbar {
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+  position: fixed;
+  top: 0rem;
+  left: 0rem;
+  z-index: 11;
+  width: 100%;
+  // max-width: 140rem;
+  height: var(--nav-height);
+  // background-color: rgba(8, 17, 31, 0.85);
+  backdrop-filter: blur(1rem);
+  transition: var(--transition);
+  filter: none !important;
+  pointer-events: auto !important;
+  user-select: auto !important;
+  padding: 0rem 2.5rem;
+  // height: var(--nav-scroll-height);
+  // transform: translateY(0px);
+  // background-color: rgba(10, 25, 47, 0.85);
+  box-shadow: 0 10px 30px -10px var(--navy-shadow);
+  @include tablet {
+    padding: 0rem 4rem;
+  }
+  @include laptop {
+    padding: 0rem 5rem;
+  }
+
+  .navbarContainer {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    color: var(--lightest-slate);
+    font-family: var(--font-mono);
+    counter-reset: item 0;
+    z-index: 12;
+  }
+  .logo {
+    color: var(--green);
+    .icon {
+      display: flex;
+      align-items: center;
+      position: relative;
+      transform: rotate(90deg);
+      .logoLine {
+  fill: none;
+  stroke: var(--green);
+  stroke-width: 24;
+}
+      h1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: 0rem;
+        font-size: 2rem;
+        text-align: center;
+        transform: rotate(-90deg);
+      }
+    }
+  }
+  .navigation {
+    position: relative;
+    nav {
+      display: flex;
+      // align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      transform: translateX(100%);
+      transition: var(--transition);
+      position: fixed;
+      top: 0rem;
+      right: 0rem;
+      bottom: 0rem;
+      height: 100vh;
+      background-color: var(--light-navy);
+      box-shadow: -1rem 0rem 3rem -1.5rem var(--navy-shadow);
+      z-index: 2;
+      width: min(75vw, 40rem);
+      gap: 2rem;
+      padding: 5rem;
+      @include tablet {
+        background-color: transparent;
+        box-shadow: none;
+        position: relative;
+        transform: translateX(0%);
+        flex-direction: row;
+        width: auto;
+        gap: 0rem;
+        padding: 0rem;
+        height: auto;
+      }
+      a {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 1rem;
+        margin: 0rem 0.5rem;
+        text-decoration: none;
+        text-decoration-skip-ink: auto;
+        position: relative;
+        transition: var(--transition);
+        // letter-spacing: 0.02rem;
+        &:hover,
+        &:focus {
+          color: var(--green);
+        }
+        font-size: clamp(var(--fz-sm), 4vw, var(--fz-lg));
+        flex-direction: column;
+        @include tablet {
+          font-size: var(--fz-xs);
+          flex-direction: row;
+        }
+        span {
+          color: var(--green);
+          font-size: var(--fz-xxs);
+        }
+      }
+      .resumeButton {
+        @include smallButton;
+        margin: 0rem auto;
+        width: 15rem;
+        @include tablet {
+          margin: 0rem;
+          margin-left: 1.5rem;
+          width: max-content;
+        }
+      }
+    }
+  }
+}

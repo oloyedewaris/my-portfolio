@@ -1,0 +1,57 @@
+@keyframes draw {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.splashScreen {
+  transition: 0.5s;
+  background-color: var(--dark-navy);
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  color: var(--green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
+  .splashIcon {
+    scale: 1;
+    transition: var(--transition);
+  }
+  .icon {
+    display: flex;
+    align-items: center;
+    position: relative;
+    .logoLine {
+      fill: var(--green);
+      stroke-dasharray: 497;
+      stroke-dashoffset: 497;
+      // animation: draw 1400ms ease-in-out 4ms forwards;
+      // fill: white;
+      stroke: var(--green);
+      stroke-width: 1;
+      transition: 0.5s;
+    }
+    h1 {
+      display: none;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: 0rem;
+      font-size: 2.8rem;
+      text-align: center;
+      font-family: 'Work Sans Pro', sans-serif;
+    }
+  }
+}

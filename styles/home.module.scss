@@ -1,0 +1,25 @@
+@import './mixins.module.scss';
+
+.main {
+  position: relative;
+  .mainContent {
+    padding: 0px 3rem;
+    @include tablet {
+      padding: 0px 10rem;
+    }
+    @include laptop {
+      padding: 0px 15rem;
+    }
+    section {
+      max-width: 100rem;
+      margin: 0rem auto;
+      color: var(--slate);
+      font-family: var(--font-sans);
+      font-size: var(--fz-xl);
+      line-height: 1.3;
+      //
+      opacity: 0;
+      transform: translateY(-10rem);
+    }
+  }
+}

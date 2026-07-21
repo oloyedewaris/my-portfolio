@@ -1,0 +1,80 @@
+@import '../../mixins.module.scss';
+
+.projectCard {
+  box-shadow: 0 10px 30px -15px var(--navy-shadow);
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  height: 100%;
+  padding: 2rem 1.75rem;
+  border-radius: var(--border-radius);
+  background-color: var(--light-navy);
+  transition: var(--transition);
+  overflow: auto;
+  text-align: left;
+  &:hover {
+    transform: translateY(-1rem);
+    h4 {
+      color: var(--green);
+    }
+  }
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: 5.5rem;
+    color: var(--light-slate);
+    margin-bottom: 2rem;
+    .left {
+      font-size: 7rem;
+      color: var(--green);
+    }
+    .right {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+    }
+    a {
+      transition: var(--transition);
+    }
+    a:hover {
+      color: var(--green);
+    }
+  }
+  h4 {
+    margin: 0px 0px 10px;
+    color: var(--lightest-slate);
+    font-size: var(--fz-xxl);
+    font-weight: 600;
+    line-height: 1.1;
+    transition: var(--transition);
+    cursor: pointer;
+  }
+  p {
+    flex: 1;
+    color: var(--light-slate);
+    font-size: 1.7rem;
+    margin: 0rem;
+  }
+  ul {
+    display: flex;
+    align-items: flex-end;
+    -webkit-box-flex: 1;
+    flex-wrap: wrap;
+    padding: 0rem;
+    margin: 2rem 0rem 0rem;
+    list-style: none;
+    gap: 1.5rem !important;
+    li {
+      font-family: var(--font-mono);
+      font-size: var(--fz-xxs);
+      line-height: 1.75;
+      text-transform: capitalize;
+    }
+  }
+}

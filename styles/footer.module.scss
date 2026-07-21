@@ -1,0 +1,85 @@
+@import './mixins.module.scss';
+
+.footer {
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  flex-direction: column;
+  height: auto;
+  min-height: 70px;
+  padding: 15px;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  color: var(--slate);
+  font-family: var(--font-sans);
+  font-size: var(--fz-xl);
+  line-height: 1.3;
+  .footerTop {
+    display: block;
+    width: 100%;
+    max-width: 27rem;
+    margin: 0rem auto 1rem;
+    color: var(--light-slate);
+    @include tablet {
+      display: none;
+    }
+    ul {
+      display: flex;
+      -webkit-box-pack: justify;
+      justify-content: space-between;
+      -webkit-box-align: center;
+      align-items: center;
+      padding: 0rem;
+      margin: 0rem;
+      list-style: none;
+    }
+    li {
+      line-height: 1.3;
+      a {
+        display: inline-block;
+        text-decoration: none;
+        text-decoration-skip-ink: auto;
+        color: inherit;
+        position: relative;
+        transition: var(--transition);
+        padding: 1rem;
+        font-size: var(--fz-xl);
+        font-family: var(--font-mono);
+        line-height: 1.3;
+      }
+      a:hover,
+      a:focus {
+        color: var(--green);
+        transform: translateY(-0.3rem);
+      }
+      svg {
+        font-size: 2rem;
+      }
+    }
+  }
+  .footerBottom {
+    display: flex;
+    flex-direction: column;
+    a {
+      display: inline-block;
+      text-decoration: none;
+      text-decoration-skip-ink: auto;
+      color: inherit;
+      position: relative;
+      transition: var(--transition);
+      padding: 1rem;
+    }
+    div {
+      color: var(--light-slate);
+      font-family: var(--font-mono);
+      font-size: var(--fz-xxs);
+      font-weight: 300;
+      line-height: 1;
+    }
+    .githubStats {
+      margin-top: 1rem;
+    }
+  }
+}

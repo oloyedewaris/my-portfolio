@@ -1,0 +1,33 @@
+@import './mixins.module.scss';
+
+.customHamburger {
+  display: flex;
+  flex-direction: column;
+  width: 3.2rem;
+  height: 2rem;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: absolute;
+  z-index: 10;
+  top: 0rem;
+  right: 0rem;
+  cursor: pointer;
+  @include tablet {
+    display: none;
+  }
+  .line1,
+  .line2,
+  .line3 {
+    height: 0.2rem;
+    width: 100%;
+    background-color: var(--green);
+    border-radius: 0.2rem;
+    transition: var(--transition);
+  }
+  .line2 {
+    width: 85%;
+  }
+  .line3 {
+    width: 70%;
+  }
+}

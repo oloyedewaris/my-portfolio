@@ -1,0 +1,43 @@
+@keyframes drawCircle {
+  from {
+    stroke-dashoffset: 377;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes drawW {
+  from {
+    stroke-dashoffset: 200;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.myLogo {
+  fill: transparent;
+  stroke: var(--green);
+  stroke-width: 6;
+  scale: 0.9;
+
+  .myCircle {
+    transform-origin: center;
+    transform: scale(1.08);
+
+    stroke-dasharray: 377;
+    stroke-dashoffset: 377;
+    animation: drawCircle 2s ease forwards;
+    animation-delay: 1.5s; // wait for W
+  }
+
+  .myW {
+    stroke-linecap: round;
+    stroke-linejoin: round;
+
+    stroke-dasharray: 200;
+    stroke-dashoffset: 200;
+    animation: drawW 1.5s ease forwards;
+  }
+}

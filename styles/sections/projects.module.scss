@@ -1,0 +1,277 @@
+@import '../mixins.module.scss';
+
+.projectCard {
+  display: flex;
+  min-height: 38.2rem;
+  position: relative;
+  margin-bottom: 10rem;
+  .projectImage {
+    order: 1;
+    height: 100%;
+    display: flex;
+    width: 0%;
+    @include tablet {
+      width: 60%;
+    }
+    .imageContainer {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      flex: 1;
+      z-index: 0;
+      // width: 60%;
+      width: 100%;
+      .mobile_image {
+        display: block;
+      }
+      .tablet_image {
+        display: none;
+      }
+      @include tablet {
+        width: 60%;
+        .mobile_image {
+          display: none;
+        }
+        .tablet_image {
+          display: block;
+        }
+      }
+    }
+  }
+
+  // .imageContainer {
+  //   display: block;
+  //   border-radius: var(--border-radius);
+  //   background-color: var(--green);
+  //   img {
+  //     position: relative;
+  //     border-radius: var(--border-radius);
+  //     mix-blend-mode: multiply;
+  //     filter: grayscale(100%) contrast(1);
+  //     transition: var(--transition);
+  //     object-fit: cover;
+  //     opacity: 1;
+  //   }
+  //   &:hover {
+  //     box-shadow: 0 2rem 3rem -1.5rem var(--navy-shadow);
+  //     background-color: inherit;
+  //     img {
+  //       filter: none;
+  //       mix-blend-mode: inherit;
+  //       transition-delay: background-color 0.5s;
+  //     }
+  //   }
+  // }
+  // .imageContainer::before {
+  //   content: '';
+  //   display: block;
+  //   position: absolute;
+  //   border-radius: var(--border-radius);
+  //   transition: var(--transition);
+  //   top: 0px;
+  //   left: 0px;
+  //   background-color: var(--navy);
+  //   mix-blend-mode: screen;
+  // }
+
+  .projectDescription {
+    order: 2;
+    width: 100%;
+    font-size: 3rem;
+    position: relative;
+    z-index: 2;
+    background-color: var(--navy-shadow);
+    padding: 3rem;
+    @include tablet {
+      text-align: right;
+      max-width: 50rem;
+      background-color: transparent;
+      padding: 0rem;
+    }
+    .caption {
+      margin: 1rem 0rem;
+      color: var(--green);
+      font-family: var(--font-mono);
+      font-size: var(--fz-xs);
+      font-weight: 400;
+    }
+    .projectTitle {
+      color: var(--white);
+      margin: 0rem 0rem 1rem;
+      font-weight: 600;
+      line-height: 1.1;
+      font-size: clamp(24px, 5vw, 28px);
+      @include tablet {
+        color: var(--lightest-slate);
+        margin: 0rem 0rem 2rem;
+      }
+    }
+    .description {
+      padding: 2rem 0rem;
+      background-color: transparent;
+      box-shadow: none;
+      transition: var(--transition);
+      position: relative;
+      z-index: 2;
+      border-radius: var(--border-radius);
+      color: var(--light-slate);
+      font-size: var(--fz-lg);
+      p,
+      a {
+        font-size: inherit;
+      }
+      a {
+        display: inline-block;
+        text-decoration: none;
+        text-decoration-skip-ink: auto;
+        position: relative;
+        transition: var(--transition);
+        color: var(--green);
+      }
+      a::after {
+        content: '';
+        display: block;
+        width: 0px;
+        height: 0.1rem;
+        position: relative;
+        bottom: 0.37em;
+        background-color: var(--green);
+        transition: var(--transition);
+        opacity: 0.5;
+      }
+      a:hover::after {
+        width: 100%;
+      }
+      @include tablet {
+        box-shadow: 0 1rem 3rem -1.5rem var(--navy-shadow);
+        padding: 2.5rem;
+        background-color: var(--light-navy);
+      }
+    }
+    .projectTechList {
+      display: flex;
+      flex-wrap: wrap;
+      position: relative;
+      z-index: 2;
+      padding: 0px;
+      list-style: none;
+      -webkit-box-pack: start;
+      justify-content: flex-start;
+      margin: 1rem 0rem;
+      gap: 1rem;
+      @include tablet {
+        -webkit-box-pack: end;
+        justify-content: flex-end;
+        margin: 2.5rem 0rem 1rem;
+        gap: 2rem;
+      }
+      li {
+        font-family: var(--font-mono);
+        font-size: var(--fz-xs);
+        white-space: nowrap;
+        margin: 0.5rem 0rem;
+        text-transform: capitalize;
+      }
+    }
+    .links {
+      display: flex;
+      -webkit-box-align: center;
+      align-items: center;
+      position: relative;
+      // margin-top: 10px;
+      // margin-left: -10px;
+      color: var(--lightest-slate);
+      font-size: 3rem;
+      justify-content: flex-start;
+      @include tablet {
+        justify-content: flex-end;
+      }
+      a {
+        padding: 1rem;
+        transition: var(--transition);
+        &:hover {
+          color: var(--green);
+        }
+      }
+    }
+  }
+}
+.projectCard:nth-child(even) {
+  .projectImage {
+    order: 2;
+    .imageContainer {
+      right: 0;
+      left: auto;
+    }
+  }
+  .projectDescription {
+    order: 1;
+    @include tablet {
+      text-align: left;
+    }
+    .projectTechList {
+      justify-content: flex-start;
+    }
+    .links {
+      justify-content: flex-start;
+    }
+  }
+}
+
+.projectsSection {
+  padding: 8rem 0rem;
+  margin: 0rem auto;
+  max-width: 100rem;
+  @include tablet {
+    padding: 10rem 0rem;
+  }
+  h1 {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    margin: 10px 0px 40px;
+    width: 100%;
+    font-size: clamp(26px, 5vw, var(--fz-heading));
+    white-space: nowrap;
+    font-weight: 600;
+    color: var(--lightest-slate);
+    line-height: 1.1;
+  }
+  h1::before {
+    position: relative;
+    bottom: 4px;
+    counter-increment: section 3;
+    content: '0' counter(section) '.';
+    margin-right: 10px;
+    color: var(--green);
+    font-family: var(--font-mono);
+    font-size: clamp(var(--fz-md), 3vw, var(--fz-xl));
+    font-weight: 400;
+  }
+  h1::after {
+    content: '';
+    display: flex;
+    position: relative;
+    top: -0.5rem;
+    height: 0.1rem;
+    background-color: var(--lightest-navy);
+    margin-left: 10px;
+    width: 100%;
+    @include tablet {
+      width: 20rem;
+      margin-left: 2rem;
+    }
+    @include laptop {
+      width: 30rem;
+    }
+  }
+  ul {
+    margin: 0rem;
+    padding: 0rem;
+    list-style: none;
+  }
+  .projectList {
+  }
+}

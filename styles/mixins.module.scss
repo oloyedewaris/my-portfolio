@@ -1,0 +1,57 @@
+@mixin phones {
+  @media screen and (max-width: 600px) {
+    @content;
+  }
+}
+
+@mixin largephone {
+  @media screen and (min-width: 600px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media screen and (min-width: 992px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: 1370px) {
+    @content;
+  }
+}
+
+@mixin largeButton {
+  color: var(--green);
+  background-color: transparent;
+  border: 0.1rem solid var(--green);
+  border-radius: var(--border-radius);
+  padding: 2rem 2.8rem;
+  font-size: var(--fz-sm);
+  font-family: var(--font-mono);
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+@mixin smallButton {
+  color: var(--green);
+  background-color: transparent;
+  border: 0.1rem solid var(--green);
+  border-radius: var(--border-radius);
+  padding: 1.2rem 1.6rem;
+  font-family: var(--font-mono);
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+  transition: var(--transition);
+  font-size: var(--fz-xs);
+}

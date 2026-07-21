@@ -1,0 +1,205 @@
+@import '../../mixins.module.scss';
+
+.projectGalleryCard {
+  .projectMedia {
+    @include laptop {
+      order: 1;
+    }
+
+    .embed_container {
+      cursor: pointer;
+      position: absolute;
+      opacity: 1;
+      width: 100%;
+      height: 100%;
+      .image_title {
+        margin: 0.5rem 0rem;
+        color: var(--green);
+        font-family: var(--font-mono);
+        font-size: var(--fz-xs);
+        font-weight: 400;
+        opacity: 0;
+      }
+      embed {
+        height: 100%;
+        width: 100%;
+      }
+      // transform: matrix(1, -0.1, 0, 1, 0, 0);
+    }
+
+    .embed_container:hover {
+      left: 3% !important;
+      width: 94%;
+      height: 94%;
+      z-index: 20;
+      // transform: matrix(1, 0, 0, 1, 0, 0);
+      .image_title {
+        opacity: 1;
+      }
+    }
+  }
+  .projectMedia:hover .embed_container:not(:hover) {
+    opacity: 0.4;
+  }
+
+  .projectDescription {
+    width: 100%;
+    font-size: 3rem;
+    // position: relative;
+    z-index: 2;
+    // background-color: var(--navy-shadow);
+    padding: 3rem;
+    text-align: center;
+    @include laptop {
+      order: 2;
+      text-align: right;
+      max-width: 45rem;
+      background-color: transparent;
+      padding: 0rem;
+    }
+    .caption {
+      margin: 1rem 0rem;
+      color: var(--green);
+      font-family: var(--font-mono);
+      font-size: var(--fz-xs);
+      font-weight: 400;
+    }
+    .projectTitle {
+      color: var(--white);
+      margin: 0rem 0rem 1rem;
+      font-weight: 600;
+      line-height: 1.1;
+      font-size: clamp(24px, 5vw, 28px);
+      @include laptop {
+        color: var(--lightest-slate);
+        margin: 0rem 0rem 2rem;
+      }
+    }
+    .description {
+      padding: 2rem 0rem;
+      background-color: transparent;
+      box-shadow: none;
+      transition: var(--transition);
+      position: relative;
+      z-index: 2;
+      border-radius: var(--border-radius);
+      color: var(--light-slate);
+      font-size: var(--fz-lg);
+      p,
+      a {
+        font-size: inherit;
+      }
+      a {
+        display: inline-block;
+        text-decoration: none;
+        text-decoration-skip-ink: auto;
+        position: relative;
+        transition: var(--transition);
+        color: var(--green);
+      }
+      a::after {
+        content: '';
+        display: block;
+        width: 0px;
+        height: 0.1rem;
+        position: relative;
+        bottom: 0.37em;
+        background-color: var(--green);
+        transition: var(--transition);
+        opacity: 0.5;
+      }
+      a:hover::after {
+        width: 100%;
+      }
+      @include laptop {
+        box-shadow: 0 1rem 3rem -1.5rem var(--navy-shadow);
+        padding: 2.5rem;
+        background-color: var(--light-navy);
+      }
+    }
+    .projectTechList {
+      display: flex;
+      flex-wrap: wrap;
+      position: relative;
+      z-index: 2;
+      padding: 0px;
+      list-style: none;
+      -webkit-box-pack: start;
+      justify-content: center;
+      margin: 1rem 0rem;
+      gap: 1rem;
+      @include laptop {
+        -webkit-box-pack: end;
+        justify-content: flex-end;
+        margin: 2.5rem 0rem 1rem;
+        gap: 2rem;
+      }
+      li {
+        font-family: var(--font-mono);
+        font-size: var(--fz-xs);
+        white-space: nowrap;
+        margin: 0.5rem 0rem;
+        text-transform: capitalize;
+      }
+    }
+    .links {
+      display: flex;
+      -webkit-box-align: center;
+      align-items: center;
+      position: relative;
+      // margin-top: 10px;
+      // margin-left: -10px;
+      color: var(--lightest-slate);
+      font-size: 3rem;
+      justify-content: center;
+      @include laptop {
+        justify-content: flex-end;
+      }
+      a {
+        padding: 1rem;
+        transition: var(--transition);
+        &:hover {
+          color: var(--green);
+        }
+      }
+    }
+  }
+}
+
+.projectGalleryCard:nth-child(even) {
+  .projectMedia {
+    @include laptop {
+      order: 2;
+    }
+    .embed_container {
+      // transform: matrix(1, 0.1, 0, 1, 0, 0);
+    }
+
+    .embed_container:hover {
+      left: auto !important;
+      right: 3% !important;
+      width: 110%;
+      height: 110%;
+      z-index: 20;
+      // transform: matrix(1, 0, 0, 1, 0, 0);
+    }
+  }
+  .projectDescription {
+    @include laptop {
+      order: 1;
+      text-align: left;
+    }
+    .projectTechList {
+      justify-content: center;
+      @include laptop {
+        justify-content: flex-start;
+      }
+    }
+    .links {
+      justify-content: center;
+      @include laptop {
+        justify-content: flex-start;
+      }
+    }
+  }
+}

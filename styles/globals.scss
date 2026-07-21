@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100;200;300;400;500;600;700;800;900&family=Fira+Code:wght@300;400;500;600;700&family=Fira+Mono:wght@400;500;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/calibre');
+@import url('https://fonts.cdnfonts.com/css/sf-mono');
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  max-width: 140rem;
+  margin: 0rem auto;
+}
+html {
+  height: 100%;
+
+  ::-webkit-scrollbar {
+    width: 12px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--dark-slate);
+    border: 3px solid var(--navy);
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--navy);
+  }
+  ::selection {
+    background-color: var(--lightest-navy);
+    color: var(--lightest-slate);
+  }
+}
+body {
+  margin: 0px;
+  width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--navy) !important;
+  color: var(--slate);
+  font-family: var(--font-sans);
+  font-size: var(--fz-xl);
+  line-height: 1.3;
+  scroll-behavior: smooth;
+}
+
+.externalLink {
+  text-decoration: none;
+  font-family: var(--font-mono);
+  text-decoration: none;
+  :hover,
+  :focus {
+    color: var(--green);
+  }
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  font-size: inherit;
+  // box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: 62.5%;
+}
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth !important;
+  font-size: 1.6rem;
+  transition: 0.3s;
+}
+:root {
+ --dark-navy: #020c1b;
+  --navy: #0a192f;
+  --light-navy: #112240;
+  --lightest-navy: #233554;
+  --navy-shadow: rgba(2, 12, 27, 0.7);
+  --dark-slate: #495670;
+  --slate: #8892b0;
+  --light-slate: #a8b2d1;
+  --lightest-slate: #ccd6f6;
+  --white: #e6f1ff;
+  --green: #64ffda;
+  --green-tint: rgba(100, 255, 218, 0.1);
+  --pink: #f57dff;
+  --blue: #57cbff;
+  --font-sans: 'Calibre', 'Inter', 'San Francisco', 'SF Pro Text', -apple-system,
+    system-ui, sans-serif;
+  // --font-sans: 'Alexandria', 'Calibre', 'Inter', 'San Francisco', 'SF Pro Text',
+  //   -apple-system, system-ui, sans-serif;
+  // --font-sans: 'Alexandria', sans-serif;
+  --font-mono: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
+  --fz-xxs: 1.2rem;
+  --fz-xs: 1.3rem;
+  --fz-sm: 1.4rem;
+  --fz-md: 1.6rem;
+  --fz-lg: 1.8rem;
+  --fz-xl: 2rem;
+  --fz-xxl: 2.2rem;
+  --fz-heading: 3.2rem;
+  --border-radius: 0.4rem;
+  --nav-height: 10rem;
+  --nav-scroll-height: 7rem;
+  --tab-height: 4.2rem;
+  --tab-width: 12rem;
+  --tab-number: 0;
+  --easing: cubic-bezier(0.645, 0.045, 0.355, 1);
+  --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  --hamburger-width: 3rem;
+  --ham-before: top 0.1s ease-in 0.25s, opacity 0.1s ease-in;
+  --ham-before-active: top 0.1s ease-out, opacity 0.1s ease-out 0.12s;
+  // --ham-after: bottom 0.1s ease-in 0.25s,
+  //   transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  // --ham-after-active: bottom 0.1s ease-out,
+  //   transform 0.22s cubic-bezier(0.215, 0.61, 0.355, 1) 0.12s;
+}
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: var(--slate);
+    background: var(--navy);
+  }
+}
