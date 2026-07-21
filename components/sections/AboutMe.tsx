@@ -8,23 +8,23 @@ const AboutMe = () => {
       <div className={styles.inner}>
         <div className={styles.text}>
           <p>
-            Hey! I'm Waris, a software engineer passionate about building
+            Hey! I’m Waris, a software engineer passionate about building
             digital products that solve real-world problems. Over the past four
-            years, I've been designing and developing web and mobile
+            years, I’ve been designing and developing web and mobile
             applications using technologies like React, React Native, Next.js,
             and Node.js. I enjoy turning ideas into scalable, user-friendly
             products and continuously improving my skills through every project
             I build.
           </p>
           <p>
-            Throughout my journey, I've worked on a variety of solutions,
+            Throughout my journey, I’ve worked on a variety of solutions,
             including healthcare platforms, legal websites, booking systems,
             productivity apps, and real estate applications. Each project has
             strengthened my understanding of software architecture, performance,
             and creating experiences that users genuinely enjoy.
           </p>
           <p>
-            Beyond software engineering, I'm currently a co-founder of{" "}
+            Beyond software engineering, I’m currently a co-founder of{" "}
             <a href="https://sphere.ng/" target="_blank" rel="noreferrer">
               Sphere
             </a>
