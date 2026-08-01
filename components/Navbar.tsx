@@ -104,7 +104,7 @@ const Navbar = () => {
                 <span>04.</span>Contact
               </Link>
               <Link
-                href="/resume/resume-martins-akeredolu.pdf"
+                href="/resume/resume-waris-oloyede.pdf"
                 target="_blank"
                 rel="noreferrer"
                 className={styles.resumeButton}

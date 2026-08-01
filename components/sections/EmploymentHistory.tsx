@@ -70,7 +70,7 @@ const EmploymentHistory = () => {
             </span>
             <span
               style={index === 2 ? activeTab : {}}
-              onClick={() => changeTab("anli")}
+              onClick={() => changeTab("estateiq")}
             >
               EstateIQ
             </span>
