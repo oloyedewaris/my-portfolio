@@ -64,19 +64,19 @@ export default function Home({ projects }: { projects: Project[] }) {
           name="description"
           content="Hey there, welcome to my personal website,Check out some of my projects, or contact me if you have any questions for me!"
         />
-        <link rel="icon" href="/waris.png" style={{ borderRadius: "100px" }} />
+        <link rel="icon" href="https://waris-oloyede.vercel.app/waris.png" />
 
         {/* Open Graph Meta Tags */}
         <meta property="og:title" content="Waris Oloyede - Portfolio" />
-        <meta property="og:type" content="article" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://waris-oloyede.vercel.app/" />
         <meta
           property="og:description"
           content="Hey there, welcome to my personal website,Check out some of my projects, or contact me if you have any questions for me!"
         />
         <meta
           property="og:image"
-          content="/waris.png"
-          style={{ borderRadius: "100px" }}
+          content="https://waris-oloyede.vercel.app/waris.png"
         />
         <meta property="og:site_name" content="Waris Oloyede - Portfolio" />
 
@@ -86,12 +86,15 @@ export default function Home({ projects }: { projects: Project[] }) {
           name="twitter:description"
           content="Hey there, welcome to my personal website,Check out some of my projects, or contact me if you have any questions for me!"
         />
-        <meta name="twitter:image" content="/waris.png" />
-        <meta name="twitter:card" content="summary" />
+        <meta
+          name="twitter:image"
+          content="https://waris-oloyede.vercel.app/waris.png"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@waris_oloyede" />
         <meta
           name="twitter:image:alt"
-          content="Hey there, welcome to my personal website,Check out some of my projects, or contact me if you have any questions for me!"
+          content="Waris Oloyede - Software Engineer"
         />
       </Head>
 
